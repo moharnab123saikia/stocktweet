@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Jan 16 17:27:10 2015
 
-@author: shafiab
-"""
 from kafka import *
 # from cashtagSet import cashtagSet
 from cashtag import cashtag
@@ -39,3 +35,5 @@ stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
 twitterFilter = cashtag('NYSE100')+cashtag('NYSE100')+cashtag('DOW30')+cashtag('COMPANIES')
 # print twitterFilter
 results = stream.statuses.filter(track=twitterFilter)
+
+print(results)
