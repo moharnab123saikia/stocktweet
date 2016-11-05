@@ -10,11 +10,11 @@ sudo pip install twython
 
 ### Steps to Run
 
-1. Navigate to Kafka folder
+* Navigate to Kafka folder
 ```
 cd kafka_2.11-0.10.0.0
 ```
-2. Start zookeeper
+* Start zookeeper
 ```
 bin/zookeeper-server-start.sh config/zookeeper.properties
 ```
@@ -28,11 +28,11 @@ Stop the existing running instance of zookeeper with:
 sudo service zookeeper stop
 ```
 and start again.
-3. Start Kafka Server:
+* Start Kafka Server:
 ```
 bin/kafka-server-start.sh config/server.properties
 ```
-4. Create a topic named: twitterStream
+* Create a topic named: twitterStream
 ```
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic twitterStream
 ```
@@ -40,7 +40,7 @@ You can check the created topic with :
 ```
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 ```
-5. Run twitterAPI.py:
+* Run twitterAPI.py:
 ```
 python twitterAPI
 ```
