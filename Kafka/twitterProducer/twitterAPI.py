@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 from kafka import *
-# from cashtagSet import cashtagSet
 from cashtag import cashtag
 from twython import TwythonStreamer
 import pprint
@@ -9,6 +8,7 @@ import re
 import json
 
 # kafka setup
+
 mykafka = KafkaClient("localhost:9092")
 producer = SimpleProducer(mykafka)
 topicName = "twitterStream"
@@ -34,7 +34,6 @@ OAUTHTOKENSECRET="U93jNaO0EKTUJdWc92BOggPG2KfHSDfY40CM0mgWIYnob"
 try:
 	stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
 	twitterFilter = cashtag('NYSE100')+cashtag('NYSE100')+cashtag('DOW30')+cashtag('COMPANIES')
-	# print twitterFilter
 	results = stream.statuses.filter(track=twitterFilter)
 
 	print(results)

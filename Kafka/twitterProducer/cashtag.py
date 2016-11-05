@@ -1,10 +1,7 @@
 # -*- coding: utf-8 -*-
 import csv
-# __all__ = ['cashtag', 'cashtagSet']
 
 def cashtag(Type):
-
-    # map the inputs to the function blocks
 
     flag = 0
     # define the function blocks
@@ -29,7 +26,6 @@ def cashtag(Type):
         raise Exception("unknown stock type")
 
 
- #   options.get(Type,errhandler)()
     with open(FILE_NAME,'rU') as file1:
         if flag==1:
             dat = csv.reader(file1,  dialect=csv.excel_tab, delimiter=',')

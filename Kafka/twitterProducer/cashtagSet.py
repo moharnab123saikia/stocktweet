@@ -5,8 +5,6 @@ import csv
 
 def cashtagSet(Type):
         
-    # map the inputs to the function blocks
-
     flag = 0
     # define the function blocks
     if Type=="DOW30":
@@ -29,17 +27,6 @@ def cashtagSet(Type):
     else:
         raise Exception("unknown stock type")
         
-#    options = {"DOW30" : DOW30,
-#               "NASDAQ100" : NASDAQ100,
-#               "NYSE100" : NYSE100,
-#               "SP500" : SP500,
-#               "NASDAQ_COMPOSITE" : NASDAQ_COMPOSITE,
-#               "NYSE_COMPOSITE" : NYSE_COMPOSITE,
-#               "ALL" : ALL
-#               }
-
-
- #   options.get(Type,errhandler)()
     with open(FILE_NAME,'rU') as file1:
         if flag==1:
             dat = csv.reader(file1,  dialect=csv.excel_tab, delimiter=',')
