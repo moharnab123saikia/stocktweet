@@ -16,29 +16,30 @@ topicName = "stockTwitsStream"
 
 def stream_symbol(symbol):        
     url = "https://api.stocktwits.com/api/2/streams/symbol/" + str(symbol) + ".json"
-    print url
+    #print url
     try:
         content = requests.get(url).text
     except Exception as e:
         print e
 	retVal = []
 	return retVal
-    
+
     return json.loads(content)
 
 def getTweets(stocks):
-    #result = []
+    result = []
     for stock in stocks:
-	res = stream_symbol(stock)
-	if len(res)==0: #error in fetching
-		continue
-	else: # fetching successful	
-		if res['response']['status']==200:
-			producer.send_messages(topicName, json.dumps(res['messages']))
-			#result+= res['messages']
-		else:
-			continue
-   # return result
+        res = stream_symbol(stock)
+        print(res)
+        if len(res)==0:
+            continue
+        else:
+            if res['response']['status']==200:
+                producer.send_messages(topicName, json.dumps(res['messages']))
+                result+= res['messages']
+            else:
+                continue
+    return result
 
 
 def fetchAndSend():
