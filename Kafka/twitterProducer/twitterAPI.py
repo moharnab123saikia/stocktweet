@@ -31,9 +31,13 @@ CONSUMERSECRET = "hBX9liZV0q5DKKIsKrCcfXg5toe3CBbZmWA6cEp9bWh9rWljna"
 OAUTHTOKEN = "102364682-rjjnlF4WvdblszBYm47wexCtM3iJMUgefK2pf5AA"
 OAUTHTOKENSECRET="U93jNaO0EKTUJdWc92BOggPG2KfHSDfY40CM0mgWIYnob"
 
-stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
-twitterFilter = cashtag('NYSE100')+cashtag('NYSE100')+cashtag('DOW30')+cashtag('COMPANIES')
-# print twitterFilter
-results = stream.statuses.filter(track=twitterFilter)
+try:
+	stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
+	twitterFilter = cashtag('NYSE100')+cashtag('NYSE100')+cashtag('DOW30')+cashtag('COMPANIES')
+	# print twitterFilter
+	results = stream.statuses.filter(track=twitterFilter)
 
-print(results)
+	print(results)
+
+except Exception, e:
+	print(e)
