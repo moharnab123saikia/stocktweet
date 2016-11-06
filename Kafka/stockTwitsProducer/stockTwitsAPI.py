@@ -16,9 +16,12 @@ topicName = "stockTwitsStream"
 
 def stream_symbol(symbol):        
     url = "https://api.stocktwits.com/api/2/streams/symbol/" + str(symbol) + ".json"
-    #print url
+    print url
     try:
+        print(requests.get(url))
         content = requests.get(url).text
+        #content = json.loads(url)
+        print(content)
     except Exception as e:
         print e
 	retVal = []
@@ -28,6 +31,7 @@ def stream_symbol(symbol):
 
 def getTweets(stocks):
     result = []
+    #print(stocks)
     for stock in stocks:
         res = stream_symbol(stock)
         print(res)
@@ -39,6 +43,7 @@ def getTweets(stocks):
                 result+= res['messages']
             else:
                 continue
+        break
     return result
 
 

@@ -39,7 +39,7 @@ def cashtagSet(Type):
         
         filterTwitter = set()
         for line in dat:
-                filterTwitter.add('$'+line[idx])
+                filterTwitter.add(line[idx])
         
         return filterTwitter
             
