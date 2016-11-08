@@ -15,9 +15,13 @@ twitterStream
 python submitjob.py
 ```
 It calls stockProducer.py  netfonds and fetches the stock data in the following format:
-
-
-
+The stock data is fetched as follow:
+```
+time	            price	  quantity	source	buyer	seller	initiator
+20161107T153000	  59.96	  58896	    Auto trade			
+20161107T153000	  59.92	  300	      Auto trade			
+20161107T153000	  59.93	  100	      Auto trade			
+```
 
 ####
 * Kill all python processes:
