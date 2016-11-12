@@ -3,7 +3,7 @@ name := "TestScala"
 version := "1.0"
 
 
-scalaVersion := "2.10.5"
+scalaVersion := "2.10.1"
 
 //libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "1.2.0-cdh5.3.2" % "provided"
 
@@ -44,7 +44,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % sparkVersion,
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-streaming-kinesis-asl" % sparkVersion,
-  "org.apache.spark" % "spark-streaming-kafka_2.10" % "1.2.0",
+  "org.apache.spark" % "spark-streaming-kafka_2.10" % sparkVersion,
   "org.apache.spark" %% "spark-sql" % sparkVersion,
   "com.datastax.spark" %% "spark-cassandra-connector" % "1.5.0",
   "org.apache.hadoop" % "hadoop-aws" % "2.7.1",
