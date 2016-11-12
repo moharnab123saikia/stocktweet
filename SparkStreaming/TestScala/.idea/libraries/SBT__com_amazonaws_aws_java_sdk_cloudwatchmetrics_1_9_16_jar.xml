@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.amazonaws:aws-java-sdk-cloudwatchmetrics:1.9.16:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatchmetrics/jars/aws-java-sdk-cloudwatchmetrics-1.9.16.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk-cloudwatchmetrics/srcs/aws-java-sdk-cloudwatchmetrics-1.9.16-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,3 +1,16 @@
+import os
+import sys
+
+# spark_home = os.environ.get('SPARK_HOME', None)
+# sys.path.insert(0, spark_home + "/python")
+
+# Add the py4j to the path.
+# You may need to change the version number to match your install
+# sys.path.insert(0, os.path.join(spark_home, 'python/lib/py4j-0.8.2.1-src.zip'))
+
+# Initialize PySpark to predefine the SparkContext variable 'sc'
+# execfile(os.path.join(spark_home, 'python/pyspark/shell.py'))
+
 from pyspark import SparkConf, SparkContext
 from pyspark.streaming import StreamingContext
 from pyspark.streaming.kafka import KafkaUtils
@@ -13,7 +26,7 @@ sc = SparkContext(conf=conf)
 def main():
     ssc = StreamingContext(sc, 60)   # Create a streaming context with batch interval of 10 sec
     ssc.checkpoint("twitter count")
-    pwords = Set([
+    pwords = set([
         "upgrade",
         "upgraded",
         "long",
@@ -43,7 +56,7 @@ def main():
         "good"])
 
 
-    nwords =Set([
+    nwords =set([
         "downgraded",
         "bears",
         "bear",
@@ -66,7 +79,6 @@ def main():
         "loser"])
        
     counts = stream(ssc, pwords, nwords, 100)
-    make_plot(counts)
 
 
 def fx(word,pwords,nwords):
@@ -84,7 +96,7 @@ def updateFunction(newValues, runningCount):
 
 def stream(ssc, pwords, nwords, duration):
     kstream = KafkaUtils.createDirectStream(
-        ssc, topics = ['twitterStream'], kafkaParams = {"metadata.broker.list": 'localhost:2181'})
+        ssc, topics = ['twitterStream'], kafkaParams = {"metadata.broker.list": 'localhost:9092'})
     tweets = kstream.map(lambda x: x[1].encode("ascii","ignore"))
     words = tweets.flatMap(lambda line: line.split(" "))
     pairs = words.map(lambda word: (fx(word,pwords,nwords), 1)).filter(lambda x: x[0]=="positive" or x[0] == "negative")
@@ -96,18 +108,6 @@ def stream(ssc, pwords, nwords, duration):
 
     running_counts.pprint()
 
-# Print the first ten elements of each RDD generated in this DStream to the console
-
-    # Each element of tweets will be the text of a tweet.
-    # You need to find the count of all the positive and negative words in these tweets.
-    # Keep track of a running total counts and print this at every time step (use the pprint function).
-    # YOUR CODE HERE
-    
-    
-    # Let the counts variable hold the word counts for all time steps
-    # You will need to use the foreachRDD function.
-    # For our implementation, counts looked like:
-    #   [[("positive", 100), ("negative", 50)], [("positive", 80), ("negative", 60)], ...]
     counts = []
     wordCounts.foreachRDD(lambda t,rdd: counts.append(rdd.collect()))
     ssc.start()                         # Start the computation

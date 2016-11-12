@@ -12,3 +12,11 @@ export PATH="$PATH:$SCALA_HOME/bin"
 ```
 source $HOME/.bashrc
 ```
+
+
+```
+$SPARK_HOME/bin/spark-submit --jars ./spark-streaming-kafka-assembly_2.10-1.5.2.jar twitterGetCount.py
+```
+
+* connector to SPARK-CASSANDRA
+$SPARK_HOME/bin/spark-shell --conf spark.cassandra.connection.host=127.0.0.1 --packages datastax:spark-cassandra-connector:1.5.0-s_2.10
