@@ -174,8 +174,8 @@ object TwitterGetCount {
 
     // create a DStream from Kafka
     val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap).map(_._2)
-
     // perform json parsing
+    lines.print()
     val tweets = lines.map( x=> parse(x))
 
     // get date
@@ -247,7 +247,6 @@ object TwitterGetCount {
 
         val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
         println("-------------------2222----------------- inside dayyyyy"+resultDay )
-        resultDay.print()
 
         resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
         println("-------------------33333----------------- saved success" )

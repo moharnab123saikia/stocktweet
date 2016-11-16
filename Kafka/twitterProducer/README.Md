@@ -68,3 +68,6 @@ It should fetch the data corresponding to stocks :
           }
 }
 ```
+
+* check data in the topic:
+./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twitterStream --from-beginning
