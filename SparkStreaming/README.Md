@@ -34,4 +34,20 @@ Twitter Stream to Cassandra
               Spark 1.5.0
               Java 8
 ```              
+* port change of Cassandra
+```
+sbt app/run -Dcassandra.connection.host=127.0.1.1
 
+
+$SPARK_HOME/bin/spark-shell --conf spark.cassandra.connection.host=127.0.1.1 \
+                            --packages datastax:spark-cassandra-connector:1.5.0-s_2.10
+```
+In /etc/cassandra/cassandra.yaml
+```
+rpc_address: 127.0.1.1
+ rpc_interface: eth1
+ rpc_interface_prefer_ipv6: false
+
+# port for Thrift to listen for clients on
+rpc_port: 9160
+```
