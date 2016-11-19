@@ -1,9 +1,14 @@
+import com.datastax.spark.connector.SomeColumns
 import org.apache.spark.{SparkConf, SparkContext}
 import org.apache.spark.streaming.StreamingContext
 import org.apache.spark.streaming.Seconds
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.joda.time.DateTime
 import org.json4s.jackson.JsonMethods._
+import com.datastax.spark.connector._
+import com.datastax.spark.connector.streaming._
+import com.datastax.spark.connector.writer._
+
 /**
   * Created by sud on 11/16/16.
   */
@@ -123,6 +128,16 @@ object TestKafkaConsumer {
     date.getWeekyear().toString+'-'+date.getWeekOfWeekyear().toString
   }
 
+  // update function for updateStateByKey
+  def updateFunc(values: Seq[(Int,Int)], runningCount: Option[(Int,Int)]):
+  Option[(Int,Int)] = {
+    val newCount1 = values.map(x=>x._1).sum
+    val newCount2 = values.map(x=>x._2).sum
+
+    val (oldCount1,oldCount2) = runningCount.getOrElse((0,0))
+    Some((newCount1 + oldCount1, newCount2 + oldCount2))
+  }
+
 
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
@@ -136,12 +151,20 @@ object TestKafkaConsumer {
   {
 
     try{
-      val conf = new SparkConf().setMaster("local[*]").setAppName("TestKafkaConsumer")
-      //      val confSparkCassandra  = new SparkConf(true)
-      //        .setAppName("TwitterGetCount")
-      //        .set("spark.cassandra.connection.host", "127.0.0.1")
-      //        .setMaster("local")
+      val conf = new SparkConf().setMaster("local[*]").setAppName("TestKafkaConsumer").set("spark.driver.allowMultipleContexts", "true")
+//        val conf  = new SparkConf(true)
+//              .setAppName("TestKafkaConsumer")
+//              .set("spark.cassandra.connection.host", "127.0.0.1")
+//              .setMaster("local")
+//      val conf  = new SparkConf(true)
+//        .setAppName("TestKafkaConsumer")
+//        .set("spark.cassandra.connection.host", "127.0.0.1")
+//        .setMaster("local")
+
       val ssc = new StreamingContext(conf, Seconds(15))
+
+      ssc.checkpoint("twitter count")
+
       // Set up the input DStream to read from Kafka (in parallel)
       val host = "localhost:2181"
       val group  = "SparkStreaming"
@@ -196,8 +219,41 @@ object TestKafkaConsumer {
       val sentiment = words.reduceByKey(_+_)
       val tickerSentiment = sentiment.flatMap{ case((a,b),c) =>  (patternTicker findAllIn b).toList.map(l=>((a,l),c)) }
 
-      sentiment.print()
-      tickerSentiment.print()
+      // join ticker frequency and sentiment
+      val pair1 = mapResult join tickerSentiment
+
+      // main operation, update state by Key-time granularity
+      val resultPair = pair1.updateStateByKey[(Int,Int)](updateFunc _)
+
+      // flatten the Dstream
+      val result = resultPair.map{case((date,ticker),(frequency,sentiment))=>(date,frequency,ticker.split('$')(1),sentiment)}
+
+
+//        result.print();
+
+      val keySpace = "twitterseries"
+//
+      val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
+      resultDay.print();
+//      val sc = new SparkContext(conf)
+//
+//      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
+//      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+      resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"),writeConf = WriteConf(ttl = TTLOption.constant(604800)))
+
+
+//        granularity match
+//      {
+//
+//        case "DAY" =>
+//          val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
+//          resultDay.print()
+//          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+//
+//      }
+
+      //sentiment.print()
+      //tickerSentiment.print()
 
       ssc.start()
       ssc.awaitTermination()

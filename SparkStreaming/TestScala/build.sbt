@@ -5,6 +5,7 @@ version := "1.0"
 
 scalaVersion := "2.10.1"
 
+
 //libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "1.2.0-cdh5.3.2" % "provided"
 
 
