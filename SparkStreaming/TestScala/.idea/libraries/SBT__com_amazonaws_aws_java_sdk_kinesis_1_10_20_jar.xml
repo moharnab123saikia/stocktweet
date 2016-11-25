@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.amazonaws:aws-java-sdk-kinesis:1.10.20:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk-kinesis/jars/aws-java-sdk-kinesis-1.10.20.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/aws-java-sdk-kinesis/srcs/aws-java-sdk-kinesis-1.10.20-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,10 +1,4 @@
-CREATE KEYSPACE 
-	twitterseries 
-	WITH replication = 
-		{
-			'class': 'SimpleStrategy', 
-			'replication_factor': 1 
-		};
+CREATE KEYSPACE twitterseries WITH replication = { 'class': 'SimpleStrategy', 'replication_factor': 1 };
 
 CREATE TABLE twitterseries.trendingday(
    year int,

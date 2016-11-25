@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="SBT: com.amazonaws:amazon-kinesis-client:1.6.1:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/amazon-kinesis-client/jars/amazon-kinesis-client-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.amazonaws/amazon-kinesis-client/srcs/amazon-kinesis-client-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

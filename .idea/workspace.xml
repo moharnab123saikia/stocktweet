@@ -1,0 +1,1242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e69a739f-4475-4f4c-ad23-b17dc3168781" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_amazon_kinesis_client_1_2_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_autoscaling_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudformation_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudfront_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudhsm_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudsearch_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudtrail_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudwatch_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cloudwatchmetrics_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_codedeploy_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cognitoidentity_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_cognitosync_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_config_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_core_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_datapipeline_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_directconnect_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_dynamodb_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_ec2_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_ecs_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_elasticache_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_elasticbeanstalk_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_elasticloadbalancing_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_elastictranscoder_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_emr_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_glacier_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_iam_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_importexport_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_kinesis_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_kms_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_lambda_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_logs_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_opsworks_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_rds_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_redshift_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_route53_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_s3_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_ses_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_simpledb_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_simpleworkflow_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_sns_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_sqs_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_storagegateway_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_sts_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_support_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_amazonaws_aws_java_sdk_swf_libraries_1_9_16_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_datastax_cassandra_cassandra_driver_core_3_0_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_datastax_spark_spark_cassandra_connector_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_esotericsoftware_kryo_kryo_2_21_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_esotericsoftware_minlog_minlog_1_2_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_esotericsoftware_reflectasm_reflectasm_1_07_shaded_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_annotations_2_4_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_core_2_4_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_fasterxml_jackson_core_jackson_databind_2_4_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_fasterxml_jackson_module_jackson_module_scala_2_10_2_4_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_sun_jersey_contribs_jersey_guice_1_9_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_sun_jersey_jersey_test_framework_jersey_test_framework_grizzly2_1_9_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_twitter_chill_2_10_0_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_twitter_chill_java_0_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_typesafe_akka_akka_actor_2_10_2_3_11_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_typesafe_akka_akka_remote_2_10_2_3_11_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_typesafe_akka_akka_slf4j_2_10_2_3_11_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__com_typesafe_config_1_2_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__commons_beanutils_commons_beanutils_1_7_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__commons_codec_commons_codec_1_6_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_all_4_0_29_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_buffer_4_0_33_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_codec_4_0_33_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_common_4_0_33_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_handler_4_0_33_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__io_netty_netty_transport_4_0_33_Final_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__jline_jline_0_9_94_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__net_razorvine_pyrolite_4_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__net_sf_py4j_py4j_0_8_2_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_cassandra_cassandra_clientutil_3_0_2_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_httpcomponents_httpclient_4_3_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_httpcomponents_httpcore_4_3_2_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_kafka_kafka_2_10_0_8_2_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_catalyst_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_core_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_launcher_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_network_common_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_network_shuffle_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_sql_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_streaming_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_streaming_kafka_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_streaming_kinesis_asl_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_apache_spark_spark_unsafe_2_10_1_5_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_eclipse_jetty_orbit_javax_servlet_3_0_0_v201112011016_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_json4s_json4s_ast_2_10_3_2_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_json4s_json4s_core_2_10_3_2_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_json4s_json4s_jackson_2_10_3_2_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_objenesis_objenesis_1_2_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_roaringbitmap_RoaringBitmap_0_4_5_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_scala_lang_scala_compiler_2_10_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_scala_lang_scala_library_2_10_5_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_scala_lang_scala_reflect_2_10_5_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_scala_lang_scalap_2_10_0_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_scalatest_scalatest_2_10_2_2_4_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_slf4j_jcl_over_slf4j_1_7_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_slf4j_jul_to_slf4j_1_7_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_slf4j_slf4j_api_1_7_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_slf4j_slf4j_log4j12_1_7_10_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_tachyonproject_tachyon_client_0_7_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_tachyonproject_tachyon_underfs_hdfs_0_7_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_tachyonproject_tachyon_underfs_local_0_7_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_uncommons_maths_uncommons_maths_1_2_2a_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__org_xerial_snappy_snappy_java_1_1_1_7_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/libraries/SBT__stax_stax_api_1_0_1_jar.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479011940000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479012000000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479012060000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479012120000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479012180000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479012240000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479324060000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479324120000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479324180000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479324240000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573735000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573735000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573750000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573750000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573765000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573765000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573780000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573780000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573795000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1479573795000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479011940000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479012000000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479012060000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479012120000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479012180000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479012240000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479324060000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479324120000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479324180000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479324240000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573735000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573735000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573750000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573750000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573765000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573765000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573780000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573780000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573795000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1479573795000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478991885620-1478991945620" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478991960001-1478992020001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992020002-1478992080002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992087202-1478992147202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992156410-1478992216410" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992219802-1478992279802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992285602-1478992345602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992347202-1478992407202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992415803-1478992475803" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992488804-1478992548804" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992560001-1478992620001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992625403-1478992685403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992697402-1478992757402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992761602-1478992821602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992825003-1478992885003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992885403-1478992945403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478992948201-1478993008201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993023404-1478993083404" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993084204-1478993144204" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993160001-1478993220001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993223401-1478993283401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993286601-1478993346601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993365200-1478993425200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993427003-1478993487003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993493402-1478993553402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993563600-1478993623600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993636001-1478993696001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993700001-1478993760001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993763802-1478993823802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993826204-1478993886204" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478993895403-1478993955403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994025504-1478994085504" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994095203-1478994155203" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994180001-1478994240001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994256601-1478994316601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994336002-1478994396002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994417201-1478994477201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994480000-1478994540000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994540001-1478994600001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994601603-1478994661603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994691801-1478994751801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994759002-1478994819002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994822601-1478994882601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994896602-1478994956602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478994960000-1478995020000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995029802-1478995089802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995140001-1478995200001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995209603-1478995269603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995273602-1478995333602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995338203-1478995398203" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995402001-1478995462001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995462203-1478995522203" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995532001-1478995592001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995594402-1478995654402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995675601-1478995735601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995740001-1478995800001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995800008-1478995860008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995871804-1478995931804" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478995942404-1478996002404" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996023801-1478996083801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996087202-1478996147202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996156603-1478996216603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996219402-1478996279402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996280001-1478996340001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996340801-1478996400801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996401001-1478996461001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996462801-1478996522801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996524600-1478996584600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996640000-1478996700000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996711201-1478996771201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996779801-1478996839801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996849201-1478996909201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996928803-1478996988803" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478996998003-1478997058003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997060002-1478997120002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997121804-1478997181804" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997184401-1478997244401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997245403-1478997305403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997306801-1478997366801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997375003-1478997435003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997439600-1478997499600" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997502202-1478997562202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997600000-1478997660000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997682201-1478997742201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997757601-1478997817601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997840001-1478997900001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997913603-1478997973603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478997988408-1478998048408" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998052202-1478998112202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998120801-1478998180801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998194402-1478998254402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998254403-1478998314403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998316402-1478998376402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998380001-1478998440001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998448802-1478998508802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998512202-1478998572202" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998575401-1478998635401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998647801-1478998707801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998720403-1478998780403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998781403-1478998841403" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998846001-1478998906001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998916803-1478998976803" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478998977803-1478999037803" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999040001-1478999100001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999105401-1478999165401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999171003-1478999231003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999232602-1478999292602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999318603-1478999378603" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999400000-1478999460000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999460001-1478999520001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999533401-1478999593401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999594001-1478999654001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999664602-1478999724602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999744001-1478999804001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999820001-1478999880001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999886801-1478999946801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1478999956601-1479000016601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000040601-1479000100601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000101402-1479000161402" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000180000-1479000240000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000266601-1479000326601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000333601-1479000393601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000405802-1479000465802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000480001-1479000540001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000600000-1479000660000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000660001-1479000720001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000728601-1479000788601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000802802-1479000862802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000892801-1479000952801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479000957200-1479001017200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001018000-1479001078000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001078400-1479001138400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001138801-1479001198801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001200001-1479001260001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001265800-1479001325800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001339000-1479001399000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001409002-1479001469002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001487601-1479001547601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001547800-1479001607800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001620001-1479001680001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001685602-1479001745602" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001745800-1479001805800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001816401-1479001876401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001878201-1479001938201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479001971800-1479002031800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002032801-1479002092801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002100001-1479002160001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002167400-1479002227400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002234800-1479002294800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002303000-1479002363000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002391001-1479002451001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002456601-1479002516601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002520001-1479002580001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002589400-1479002649400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002654000-1479002714000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002719800-1479002779800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002792400-1479002852400" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002853802-1479002913802" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002915800-1479002975800" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479002984401-1479003044401" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003053601-1479003113601" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003120001-1479003180001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003217000-1479003277000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003300000-1479003360000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003360001-1479003420001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003428201-1479003488201" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003500000-1479003560000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003577801-1479003637801" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003639001-1479003699001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003704200-1479003764200" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479003780001-1479003840001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006288156-1479006348156" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006360000-1479006420000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006480003-1479006540003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006600001-1479006660001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006660003-1479006720003" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006780001-1479006840001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006840002-1479006900002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479006960000-1479007020000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007020001-1479007080001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007140000-1479007200000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007200001-1479007260001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007320000-1479007380000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007380001-1479007440001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007500001-1479007560001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007620001-1479007680001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007740000-1479007800000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007860001-1479007920001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479007980001-1479008040001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008100000-1479008160000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008160001-1479008220001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008280000-1479008340000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008340002-1479008400002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008460001-1479008520001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008580001-1479008640001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008700000-1479008760000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008760002-1479008820002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479008880000-1479008940000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009000002-1479009060002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009120001-1479009180001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009240001-1479009300001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009360000-1479009420000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009420002-1479009480002" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009540001-1479009600001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009660000-1479009720000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009720001-1479009780001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009840001-1479009900001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479009960001-1479010020001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010080000-1479010140000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010200000-1479010260000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010320000-1479010380000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010440000-1479010500000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010560001-1479010620001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010680000-1479010740000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010800000-1479010860000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479010920001-1479010980001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011040000-1479011100000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011100001-1479011160001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011220001-1479011280001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011340000-1479011400000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011460001-1479011520001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011580001-1479011640001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011700000-1479011760000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011820000-1479011880000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479011940000-1479012000000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479012000001-1479012060001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479012120000-1479012180000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479012240001-1479012300001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479324019463-1479324079463" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479324081008-1479324141008" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479324144404-1479324204404" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479324205005-1479324265005" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1479573738602-1479573798602" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/modules/testscala-build.iml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/modules/testscala-build.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/modules/testscala.iml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/modules/testscala.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/sbt.xml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/sbt.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestCassandra.scala" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestCassandra.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TwitterGetCount.scala" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TwitterGetCount.scala" />
+    </list>
+    <ignored path="stocktweet.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/SparkStreaming/TestScala">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="stocktweet" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48251748">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitterseries.cql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.Md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+          <provider editor-type-id="MarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.0">
+                <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkStreaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkStreaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkStreaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkStreaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkStreaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TestScala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stocktweet" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Cassandra-ddl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/SparkStreaming/TestScala" />
+  </component>
+  <component name="RunManager" selected="Application.TestKafkaConsumer">
+    <configuration default="false" name="TestKafkaConsumer" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestKafkaConsumer" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="testscala" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="stocktweet" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
+      <setting name="environment" value="" />
+      <setting name="specsToExecute" value="" />
+      <setting name="tags" value="" />
+      <setting name="parallelNodes" value="" />
+      <setting name="execInParallel" value="false" />
+      <setting name="programParameters" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="moduleName" value="" />
+      <envMap />
+      <setting name="rowsRange" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.TestKafkaConsumer" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.TestKafkaConsumer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="lastUpdateTimestamp" value="1480109765923" />
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="TestScala" />
+              <option name="path" value="$PROJECT_DIR$/SparkStreaming/TestScala" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="testscala" />
+                <option name="path" value="$PROJECT_DIR$/SparkStreaming/TestScala" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="testscala-build" />
+                <option name="path" value="$PROJECT_DIR$/SparkStreaming/TestScala/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e69a739f-4475-4f4c-ad23-b17dc3168781" name="Default" comment="" />
+      <created>1480015927086</created>
+      <option name="number" value="Default" />
+      <updated>1480015927086</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="800" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.30585107">
+            <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48251748">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

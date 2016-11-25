@@ -51,7 +51,7 @@ object TestKafkaConsumer {
     "good")
 
 
-  val negative =Set(
+  val negative = Set(
     "downgraded",
     "bears",
     "bear",
@@ -75,8 +75,7 @@ object TestKafkaConsumer {
 
 
   // get sentiment of a word
-  def getWordSentiment(word:String)=
-  {
+  def getWordSentiment(word: String) = {
     if (positive.contains(word)) 1
     else if (negative.contains(word)) -1
     else 0
@@ -84,22 +83,20 @@ object TestKafkaConsumer {
 
 
   // get index of a month
-  def getMonth(month:String)=
-  {
-    val m = month.toUpperCase() match
-    {
-      case "JAN"=>1
-      case "FEB"=>2
-      case "MAR"=>3
-      case "APR"=>4
-      case "MAY"=>5
-      case "JUN"=>6
-      case "JUL"=>7
-      case "AUG"=>8
-      case "SEP"=>9
-      case "OCT"=>10
-      case "NOV"=>11
-      case "DEC"=>12
+  def getMonth(month: String) = {
+    val m = month.toUpperCase() match {
+      case "JAN" => 1
+      case "FEB" => 2
+      case "MAR" => 3
+      case "APR" => 4
+      case "MAY" => 5
+      case "JUN" => 6
+      case "JUL" => 7
+      case "AUG" => 8
+      case "SEP" => 9
+      case "OCT" => 10
+      case "NOV" => 11
+      case "DEC" => 12
 
     }
     m.toString
@@ -107,8 +104,7 @@ object TestKafkaConsumer {
 
 
   // return date-time from string
-  def getTime(dateString:String) =
-  {
+  def getTime(dateString: String) = {
     val str = dateString.split(' ')
     val Month = getMonth(str(1))
     val Day = str(2)
@@ -118,23 +114,22 @@ object TestKafkaConsumer {
     val Min = time(1)
     val Sec = time(2)
 
-    ( Year, Month, Day, Hr, Min, Sec)
+    (Year, Month, Day, Hr, Min, Sec)
   }
 
   // return week index
-  def getWeek(year:String, month:String, day:String)=
-  {
+  def getWeek(year: String, month: String, day: String) = {
     val date = new DateTime(year.toInt, month.toInt, day.toInt, 12, 0, 0, 0)
-    date.getWeekyear().toString+'-'+date.getWeekOfWeekyear().toString
+    date.getWeekyear().toString + '-' + date.getWeekOfWeekyear().toString
   }
 
   // update function for updateStateByKey
-  def updateFunc(values: Seq[(Int,Int)], runningCount: Option[(Int,Int)]):
-  Option[(Int,Int)] = {
-    val newCount1 = values.map(x=>x._1).sum
-    val newCount2 = values.map(x=>x._2).sum
+  def updateFunc(values: Seq[(Int, Int)], runningCount: Option[(Int, Int)]):
+  Option[(Int, Int)] = {
+    val newCount1 = values.map(x => x._1).sum
+    val newCount2 = values.map(x => x._2).sum
 
-    val (oldCount1,oldCount2) = runningCount.getOrElse((0,0))
+    val (oldCount1, oldCount2) = runningCount.getOrElse((0, 0))
     Some((newCount1 + oldCount1, newCount2 + oldCount2))
   }
 
@@ -147,19 +142,21 @@ object TestKafkaConsumer {
   }
 
 
-  def getResult(granularity:String)=
-  {
+  def getResult(granularity: String) = {
 
-    try{
-      val conf = new SparkConf().setMaster("local[*]").setAppName("TestKafkaConsumer").set("spark.driver.allowMultipleContexts", "true")
-//        val conf  = new SparkConf(true)
-//              .setAppName("TestKafkaConsumer")
-//              .set("spark.cassandra.connection.host", "127.0.0.1")
-//              .setMaster("local")
-//      val conf  = new SparkConf(true)
-//        .setAppName("TestKafkaConsumer")
-//        .set("spark.cassandra.connection.host", "127.0.0.1")
-//        .setMaster("local")
+    try {
+      val conf = new SparkConf().
+                    setMaster("local[*]")
+                    .setAppName("TestKafkaConsumer")
+                    .set("spark.driver.allowMultipleContexts", "true")
+//              val conf  = new SparkConf(true)
+//                    .setAppName("TestKafkaConsumer")
+//                    .set("spark.cassandra.connection.host", "127.0.0.1")
+//                    .setMaster("local")
+      //      val conf  = new SparkConf(true)
+      //        .setAppName("TestKafkaConsumer")
+      //        .set("spark.cassandra.connection.host", "127.0.0.1")
+      //        .setMaster("local")
 
       val ssc = new StreamingContext(conf, Seconds(15))
 
@@ -167,90 +164,89 @@ object TestKafkaConsumer {
 
       // Set up the input DStream to read from Kafka (in parallel)
       val host = "localhost:2181"
-      val group  = "SparkStreaming"
+      val group = "SparkStreaming"
       val inputTopic = "twitterStream"
-      val topicMap =  Map(inputTopic -> 1)
+      val topicMap = Map(inputTopic -> 1)
       val kafkaStream = KafkaUtils.createStream(ssc, host, group, topicMap).map(_._2)
 
       //      val kafkaStream = KafkaUtils.createStream(ssc, "localhost:2181","spark-streaming-consumer-group", Map("twitterStream" -> 5))
       //      kafkaStream.print()
 
-      val tweets = kafkaStream.map( x=> parse(x))
-      // tweets.print()
+      val tweets = kafkaStream.map(x => parse(x))
+       tweets.print()
 
-      val date = tweets.map(x=> ( getTime(compact(render(x \ "created_at" ))), compact(render(x \ "text")) )  )
-        .map{case((a,b,c,d,e,f),text)=>(a,b,c,d,e,f,text)}
+      val date = tweets.map(x => (getTime(compact(render(x \ "created_at"))), compact(render(x \ "text"))))
+        .map { case ((a, b, c, d, e, f), text) => (a, b, c, d, e, f, text) }
 
 
       // get texts
-      val texts = tweets.map(x=>compact(render(x \ "text")))
+      val texts = tweets.map(x => compact(render(x \ "text")))
 
       // texts.print()
 
       // map based on time granularity
 
-      val timeStep = granularity match
-      {
+      val timeStep = granularity match {
         case "YEAR" =>
-          date map {case(a,b,c,d,e,f,text)=>(a,text)}
+          date map { case (a, b, c, d, e, f, text) => (a, text) }
         case "MONTH" =>
-          date map {case(a,b,c,d,e,f,text)=>(a+'-'+b,text)}
-        case "WEEK"=>
-          date map {case(a,b,c,d,e,f,text)=>(getWeek(a,b,c),text)}
+          date map { case (a, b, c, d, e, f, text) => (a + '-' + b, text) }
+        case "WEEK" =>
+          date map { case (a, b, c, d, e, f, text) => (getWeek(a, b, c), text) }
         case "DAY" =>
-          date map {case(a,b,c,d,e,f,text)=>(a+'-'+b+'-'+c,text)}
+          date map { case (a, b, c, d, e, f, text) => (a + '-' + b + '-' + c, text) }
         case "HR" =>
-          date map {case(a,b,c,d,e,f,text)=>(a+'-'+b+'-'+c+'-'+d,text)}
+          date map { case (a, b, c, d, e, f, text) => (a + '-' + b + '-' + c + '-' + d, text) }
         case "MIN" =>
-          date map {case(a,b,c,d,e,f,text)=>(a+'-'+b+'-'+c+'-'+d+'-'+e,text)}
+          date map { case (a, b, c, d, e, f, text) => (a + '-' + b + '-' + c + '-' + d + '-' + e, text) }
         case "SEC" =>
-          date map {case(a,b,c,d,e,f,text)=>(a+'-'+b+'-'+c+'-'+d+'-'+e+'-'+f,text)}
+          date map { case (a, b, c, d, e, f, text) => (a + '-' + b + '-' + c + '-' + d + '-' + e + '-' + f, text) }
       }
 
       // timeStep.print()
 
       // ticker frequency
-      val mapResult = timeStep flatMap{ case(a,b)=> (patternTicker findAllIn b).toList.map(l=>((a,l),1))}
+      val mapResult = timeStep flatMap { case (a, b) => (patternTicker findAllIn b).toList.map(l => ((a, l), 1)) }
 
-     // mapResult.print()
+      // mapResult.print()
 
-     val words = timeStep flatMap{ case(a,b)=> (b.trim().toLowerCase().split(patternWord)).map(c=>((a,b),getWordSentiment(c))) }
+      val words = timeStep flatMap { case (a, b) => (b.trim().toLowerCase().split(patternWord)).map(c => ((a, b), getWordSentiment(c))) }
 
-      val sentiment = words.reduceByKey(_+_)
-      val tickerSentiment = sentiment.flatMap{ case((a,b),c) =>  (patternTicker findAllIn b).toList.map(l=>((a,l),c)) }
+      val sentiment = words.reduceByKey(_ + _)
+      val tickerSentiment = sentiment.flatMap { case ((a, b), c) => (patternTicker findAllIn b).toList.map(l => ((a, l), c)) }
 
       // join ticker frequency and sentiment
       val pair1 = mapResult join tickerSentiment
 
       // main operation, update state by Key-time granularity
-      val resultPair = pair1.updateStateByKey[(Int,Int)](updateFunc _)
+      val resultPair = pair1.updateStateByKey[(Int, Int)](updateFunc _)
 
       // flatten the Dstream
-      val result = resultPair.map{case((date,ticker),(frequency,sentiment))=>(date,frequency,ticker.split('$')(1),sentiment)}
+      val result = resultPair.map { case ((date, ticker), (frequency, sentiment)) => (date, frequency, ticker.split('$')(1), sentiment) }
 
 
-//        result.print();
+      //        result.print();
 
       val keySpace = "twitterseries"
-//
-      val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
+      //
+      val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
       resultDay.print();
-//      val sc = new SparkContext(conf)
-//
-//      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
-//      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-      resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"),writeConf = WriteConf(ttl = TTLOption.constant(604800)))
+      //      val sc = new SparkContext(conf)
+      //
+      //      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
+      //      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+      resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
 
 
-//        granularity match
-//      {
-//
-//        case "DAY" =>
-//          val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
-//          resultDay.print()
-//          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-//
-//      }
+      //        granularity match
+      //      {
+      //
+      //        case "DAY" =>
+      //          val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
+      //          resultDay.print()
+      //          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+      //
+      //      }
 
       //sentiment.print()
       //tickerSentiment.print()
