@@ -2,124 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69a739f-4475-4f4c-ad23-b17dc3168781" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480109970000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480109970000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480109985000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480109985000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110000000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110000000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110015000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110015000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110030000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110030000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/._partitioner.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00001.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00002.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00003.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00004.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00005.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00006.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/.part-00007.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/_partitioner" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00002" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00004" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00005" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00006" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-965/part-00007" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/._partitioner.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00001.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00002.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00003.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00004.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00005.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00006.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/.part-00007.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/_partitioner" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00002" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00004" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00005" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00006" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/7819e706-ddc9-41c7-a876-c5228212808b/rdd-984/part-00007" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480109970000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480109970000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480109985000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480109985000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110000000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110000000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110015000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110015000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110030000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110030000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1480109957475-1480110017475" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1480110030004-1480110090004" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480109970000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480109970000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480109985000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480109985000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110000000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110000000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110015000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110015000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110030000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/.checkpoint-1480110030000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/._partitioner.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00001.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00002.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00003.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00004.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00005.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00006.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/.part-00007.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/_partitioner" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00002" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00004" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00005" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00006" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-224/part-00007" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/._partitioner.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00001.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00002.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00003.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00004.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00005.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00006.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/.part-00007.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/_partitioner" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00001" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00002" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00003" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00004" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00005" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00006" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/09da9a80-8ae5-4d56-8e10-de8dcfc5bc15/rdd-243/part-00007" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480109970000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480109970000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480109985000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480109985000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110000000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110000000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110015000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110015000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110030000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/checkpoint-1480110030000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twitter count/receivedBlockMetadata/log-1480109972600-1480110032600" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" />
     </list>
     <ignored path="stocktweet.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -169,8 +52,8 @@
           </provider>
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.36898395">
-                <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <first_editor vertical-scroll-proportion="0.24598931">
+                <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -875,8 +758,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.36898395">
-            <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <first_editor vertical-scroll-proportion="0.24598931">
+            <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
