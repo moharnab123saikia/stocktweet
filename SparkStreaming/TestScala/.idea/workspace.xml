@@ -1047,6 +1047,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87920487">
           <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
+          <folding>
+            <element signature="e#42#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
