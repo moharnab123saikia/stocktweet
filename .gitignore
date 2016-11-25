@@ -83,7 +83,7 @@ venv/
 ENV/
 
 # Twitter Count
-twitter count
+twitter count/*
 
 # Spyder project settings
 .spyderproject
