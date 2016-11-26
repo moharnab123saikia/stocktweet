@@ -146,9 +146,11 @@ object TestKafkaConsumer {
 
     try {
       val conf = new SparkConf().
-                    setMaster("local[*]")
+                    setMaster("spark://ec2-54-204-101-118.compute-1.amazonaws.com:7077")
+//                    setMaster("local[*]")
                     .setAppName("TestKafkaConsumer")
                     .set("spark.driver.allowMultipleContexts", "true")
+                    .set("spark.shuffle.blockTransferService", "nio")
 //              val conf  = new SparkConf(true)
 //                    .setAppName("TestKafkaConsumer")
 //                    .set("spark.cassandra.connection.host", "127.0.0.1")
@@ -235,7 +237,9 @@ object TestKafkaConsumer {
       //
       //      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
       //      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-      resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
+      resultDay.saveToCassandra(keySpace,
+                "trendingday",
+              SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
 
 
       //        granularity match
