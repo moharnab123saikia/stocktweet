@@ -93,3 +93,4 @@ twitter\ count/*
 
 # Rope project settings
 .ropeproject
+/.idea/workspace.xml
