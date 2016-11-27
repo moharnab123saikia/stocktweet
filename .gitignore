@@ -85,6 +85,9 @@ ENV/
 # Twitter Count
 twitter\ count/*
 
+#Workspace and tasks
+**/.idea/workspace.xml **/.idea/tasks.xml
+
 # Spyder project settings
 .spyderproject
 
