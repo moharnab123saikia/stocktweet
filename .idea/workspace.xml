@@ -2,35 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69a739f-4475-4f4c-ad23-b17dc3168781" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cassandra-ddl/tweet_table.cql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110600000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110600000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110615000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110615000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110630000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110630000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110645000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110645000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110660000.bk.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480110660000.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110600000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110600000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110615000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110615000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110630000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110630000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110645000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110645000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110660000" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480110660000.bk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1480110617377-1480110677377" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/stocktweet.iml" afterPath="$PROJECT_DIR$/.idea/stocktweet.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114920000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114920000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114935000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114935000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114950000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114950000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114965000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114965000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114980000.bk.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/.checkpoint-1480114980000.crc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114920000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114920000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114935000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114935000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114950000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114950000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114965000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114965000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114980000" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/checkpoint-1480114980000.bk" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1480114935004-1480114995004" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/twitter count/receivedBlockMetadata/log-1480114965010-1480115025010" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql" afterPath="$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql" afterPath="$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" afterPath="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" />
     </list>
@@ -77,48 +76,36 @@
     <favorites_list name="stocktweet" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-          <provider editor-type-id="MarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="TestKafkaConsumer.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="249" column="31" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
-              <folding />
+              <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+                <marker date="1480207290000" expanded="true" signature="5489:5676" placeholder="(...)" />
+                <marker date="1480207290000" expanded="true" signature="5742:6094" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitter_series.cql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="stock_schema.cql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="stock_schema.cql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="twitter_series.cql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.15972222">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -128,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/Cassandra-ddl/tweet_table.cql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="47" />
+              <caret line="1" column="114" selection-start-line="1" selection-start-column="114" selection-end-line="1" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -148,7 +135,7 @@
         <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+              <caret line="1" column="106" selection-start-line="1" selection-start-column="106" selection-end-line="1" selection-end-column="106" />
               <folding />
             </state>
           </provider>
@@ -158,7 +145,7 @@
         <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -179,14 +166,15 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" />
-        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql" />
-        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql" />
-        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql" />
         <option value="$PROJECT_DIR$/Cassandra-ddl/twitterseries.cql" />
         <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql" />
         <option value="$PROJECT_DIR$/Cassandra-ddl/tweet_table.cql" />
+        <option value="$PROJECT_DIR$/Cassandra-ddl/README.md" />
+        <option value="$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala" />
         <option value="$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql" />
+        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql" />
+        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql" />
+        <option value="$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql" />
       </list>
     </option>
   </component>
@@ -221,6 +209,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -249,38 +238,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="SparkStreaming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stocktweet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stocktweet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkStreaming" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TestScala" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stocktweet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stocktweet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Cassandra-ddl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -288,14 +245,16 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SparkStreaming/TestScala" />
     <property name="prop_add_unversioned_files" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RunManager" selected="Application.TestCassandra">
     <configuration default="false" name="TestKafkaConsumer" type="Application" factoryName="Application" temporary="true">
@@ -776,7 +735,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1480114153207" />
+    <option name="lastUpdateTimestamp" value="1480200213826" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -828,36 +787,54 @@
       <option name="project" value="LOCAL" />
       <updated>1480115224501</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated readme&#10;">
+      <created>1480135396547</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1480135396547</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Updated readme&#10;">
+      <created>1480135572855</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1480135572855</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated readme&#10;">
+      <created>1480135688637</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1480135688637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="803" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32846716" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32846716" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280116" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991204" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -885,6 +862,43 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="249" column="31" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <marker date="1480207290000" expanded="true" signature="5489:5676" placeholder="(...)" />
+            <marker date="1480207290000" expanded="true" signature="5742:6094" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -894,8 +908,59 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/tweet_table.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
@@ -906,6 +971,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -914,16 +982,12 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,6 +999,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -944,19 +1011,18 @@
           <second_editor />
         </state>
       </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -964,9 +1030,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
@@ -977,6 +1040,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -985,11 +1051,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -998,11 +1064,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -1011,11 +1077,11 @@
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -1023,12 +1089,12 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.30585107">
@@ -1036,9 +1102,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/CassandraTest/build.sbt">
@@ -1056,6 +1119,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Kafka/twitterProducer/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
@@ -1063,9 +1129,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/build.sbt">
@@ -1087,11 +1150,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.9760956">
           <caret line="90" column="22" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/README.Md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.30748662">
@@ -1099,9 +1164,6 @@
           </first_editor>
           <second_editor />
         </state>
-      </provider>
-      <provider editor-type-id="MarkdownFxPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkStreaming/CassandraTest/src/main/scala/CassandraTest.scala">
@@ -1112,23 +1174,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
           <first_editor vertical-scroll-proportion="0.0">
-            <caret line="9" column="75" selection-start-line="9" selection-start-column="75" selection-end-line="9" selection-end-column="75" />
+            <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/README.md">
       <provider editor-type-id="MarkdownFxPreviewEditor">
         <state />
       </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.12169312">
+            <caret line="2" column="51" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql">
+    <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <caret line="151" column="40" selection-start-line="151" selection-start-column="40" selection-end-line="151" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+            <marker date="1480207290000" expanded="true" signature="5489:5676" placeholder="(...)" />
+            <marker date="1480207290000" expanded="true" signature="5742:6094" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="114" selection-start-line="1" selection-start-column="114" selection-end-line="1" selection-end-column="114" />
           <folding />
         </state>
       </provider>
@@ -1136,31 +1224,23 @@
     <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending.cql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+          <caret line="1" column="106" selection-start-line="1" selection-start-column="106" selection-end-line="1" selection-end-column="106" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series_streaming.cql">
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_trending_streaming.cql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="47" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="47" />
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparkStreaming/TestScala/src/main/scala/TestKafkaConsumer.scala">
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="249" column="31" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="1" column="100" selection-start-line="1" selection-start-column="100" selection-end-line="1" selection-end-column="100" />
           <folding />
         </state>
       </provider>
@@ -1168,18 +1248,107 @@
     <entry file="file://$PROJECT_DIR$/Cassandra-ddl/tweet_table.cql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/stock_schema.cql">
+    <entry file="file://$PROJECT_DIR$/Cassandra-ddl/twitter_series.cql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.15972222">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Python</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>scala-sdk-2.11.5</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>stocktweet</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>SBT: aopalliance:aopalliance:1.0:jar</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

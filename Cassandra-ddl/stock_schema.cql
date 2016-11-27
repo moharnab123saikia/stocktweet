@@ -1,5 +1,5 @@
 DROP KEYSPACE IF EXISTS stockData;
-CREATE KEYSPACE stock_data WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+CREATE KEYSPACE stock_data WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 use stock_data;
 

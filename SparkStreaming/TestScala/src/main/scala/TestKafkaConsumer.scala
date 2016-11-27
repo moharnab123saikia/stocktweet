@@ -1,13 +1,10 @@
-import com.datastax.spark.connector.SomeColumns
-import org.apache.spark.{SparkConf, SparkContext}
-import org.apache.spark.streaming.StreamingContext
-import org.apache.spark.streaming.Seconds
+import com.datastax.spark.connector.streaming._
+import com.datastax.spark.connector.{SomeColumns, _}
+import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
+import org.apache.spark.streaming.{Seconds, StreamingContext}
 import org.joda.time.DateTime
 import org.json4s.jackson.JsonMethods._
-import com.datastax.spark.connector._
-import com.datastax.spark.connector.streaming._
-import com.datastax.spark.connector.writer._
 
 /**
   * Created by sud on 11/16/16.
@@ -73,88 +70,26 @@ object TestKafkaConsumer {
     "lost",
     "loser")
 
-
-  // get sentiment of a word
-  def getWordSentiment(word: String) = {
-    if (positive.contains(word)) 1
-    else if (negative.contains(word)) -1
-    else 0
-  }
-
-
-  // get index of a month
-  def getMonth(month: String) = {
-    val m = month.toUpperCase() match {
-      case "JAN" => 1
-      case "FEB" => 2
-      case "MAR" => 3
-      case "APR" => 4
-      case "MAY" => 5
-      case "JUN" => 6
-      case "JUL" => 7
-      case "AUG" => 8
-      case "SEP" => 9
-      case "OCT" => 10
-      case "NOV" => 11
-      case "DEC" => 12
-
-    }
-    m.toString
-  }
-
-
-  // return date-time from string
-  def getTime(dateString: String) = {
-    val str = dateString.split(' ')
-    val Month = getMonth(str(1))
-    val Day = str(2)
-    val Year = str(5).split('"')(0)
-    val time = str(3).split(':')
-    val Hr = time(0)
-    val Min = time(1)
-    val Sec = time(2)
-
-    (Year, Month, Day, Hr, Min, Sec)
-  }
-
-  // return week index
-  def getWeek(year: String, month: String, day: String) = {
-    val date = new DateTime(year.toInt, month.toInt, day.toInt, 12, 0, 0, 0)
-    date.getWeekyear().toString + '-' + date.getWeekOfWeekyear().toString
-  }
-
-  // update function for updateStateByKey
-  def updateFunc(values: Seq[(Int, Int)], runningCount: Option[(Int, Int)]):
-  Option[(Int, Int)] = {
-    val newCount1 = values.map(x => x._1).sum
-    val newCount2 = values.map(x => x._2).sum
-
-    val (oldCount1, oldCount2) = runningCount.getOrElse((0, 0))
-    Some((newCount1 + oldCount1, newCount2 + oldCount2))
-  }
-
-
   def main(args: Array[String]): Unit = {
     println("Hello, world!")
-    getResult("DAY")
+    getResult(args(0))
 
 
   }
-
 
   def getResult(granularity: String) = {
 
     try {
       val conf = new SparkConf().
-                    setMaster("spark://ec2-54-204-101-118.compute-1.amazonaws.com:7077")
-//                    setMaster("local[*]")
-                    .setAppName("TestKafkaConsumer")
-                    .set("spark.driver.allowMultipleContexts", "true")
-                    .set("spark.shuffle.blockTransferService", "nio")
-//              val conf  = new SparkConf(true)
-//                    .setAppName("TestKafkaConsumer")
-//                    .set("spark.cassandra.connection.host", "127.0.0.1")
-//                    .setMaster("local")
+        //        setMaster("spark://ec2-54-204-101-118.compute-1.amazonaws.com:7077")
+        setMaster("local[*]")
+        .setAppName("TestKafkaConsumer")
+        .set("spark.driver.allowMultipleContexts", "true")
+        .set("spark.shuffle.blockTransferService", "nio")
+      //              val conf  = new SparkConf(true)
+      //                    .setAppName("TestKafkaConsumer")
+      //                    .set("spark.cassandra.connection.host", "127.0.0.1")
+      //                    .setMaster("local")
       //      val conf  = new SparkConf(true)
       //        .setAppName("TestKafkaConsumer")
       //        .set("spark.cassandra.connection.host", "127.0.0.1")
@@ -175,7 +110,7 @@ object TestKafkaConsumer {
       //      kafkaStream.print()
 
       val tweets = kafkaStream.map(x => parse(x))
-       tweets.print()
+      tweets.print()
 
       val date = tweets.map(x => (getTime(compact(render(x \ "created_at"))), compact(render(x \ "text"))))
         .map { case ((a, b, c, d, e, f), text) => (a, b, c, d, e, f, text) }
@@ -229,28 +164,48 @@ object TestKafkaConsumer {
 
       //        result.print();
 
-      val keySpace = "twitterseries"
+      val keySpace = "twitter_series"
       //
-      val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
-      resultDay.print();
+      //      val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+      //      resultDay.print();
       //      val sc = new SparkContext(conf)
       //
       //      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
       //      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-      resultDay.saveToCassandra(keySpace,
-                "trendingday",
-              SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
+      //      resultDay.saveToCassandra(keySpace,
+      //        "trendingday",
+      //        SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
 
 
-      //        granularity match
-      //      {
-      //
-      //        case "DAY" =>
-      //          val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
-      //          resultDay.print()
-      //          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-      //
-      //      }
+      granularity match {
+
+//        case "DAY" =>
+//          val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+//          //resultDay.print()
+//          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+
+        case "YEAR" =>
+          val resultYear = result.map { case (date, frequency, ticker, sentiment) => (date.toInt, frequency, ticker, sentiment) } // keyspace, table, column names
+          resultYear.saveToCassandra(keySpace, "trendingyear", SomeColumns("year", "frequency", "ticker", "sentiment"))
+
+        case "MONTH" =>
+          val resultMonth = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment) }
+          resultMonth.saveToCassandra(keySpace, "trendingmonth", SomeColumns("year", "month", "frequency", "ticker", "sentiment"))
+        case "WEEK" =>
+          val resultWeek = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment) }
+          resultWeek.saveToCassandra(keySpace, "trendingweek", SomeColumns("year", "week", "frequency", "ticker", "sentiment"))
+        case "DAY" =>
+          val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+        case "HR" =>
+          val resultHr = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, frequency, ticker, sentiment) }
+          resultHr.saveToCassandra(keySpace, "trendinghour", SomeColumns("year", "month", "day", "hour", "frequency", "ticker", "sentiment"))
+        case "MIN" =>
+          val resultMin = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, date.split('-')(4).toInt, frequency, ticker, sentiment) }
+          resultMin.saveToCassandra(keySpace, "trendingminute", SomeColumns("year", "month", "day", "hour", "minute", "frequency", "ticker", "sentiment"))
+
+
+      }
 
       //sentiment.print()
       //tickerSentiment.print()
@@ -261,8 +216,65 @@ object TestKafkaConsumer {
 
     }
     catch {
-      case unknown => println("An error occured" + unknown)
+      case unknown => println("An error occurred" + unknown)
     }
 
+  }
+
+  // get sentiment of a word
+  def getWordSentiment(word: String) = {
+    if (positive.contains(word)) 1
+    else if (negative.contains(word)) -1
+    else 0
+  }
+
+  // return date-time from string
+  def getTime(dateString: String) = {
+    val str = dateString.split(' ')
+    val Month = getMonth(str(1))
+    val Day = str(2)
+    val Year = str(5).split('"')(0)
+    val time = str(3).split(':')
+    val Hr = time(0)
+    val Min = time(1)
+    val Sec = time(2)
+
+    (Year, Month, Day, Hr, Min, Sec)
+  }
+
+  // get index of a month
+  def getMonth(month: String) = {
+    val m = month.toUpperCase() match {
+      case "JAN" => 1
+      case "FEB" => 2
+      case "MAR" => 3
+      case "APR" => 4
+      case "MAY" => 5
+      case "JUN" => 6
+      case "JUL" => 7
+      case "AUG" => 8
+      case "SEP" => 9
+      case "OCT" => 10
+      case "NOV" => 11
+      case "DEC" => 12
+
+    }
+    m.toString
+  }
+
+  // return week index
+  def getWeek(year: String, month: String, day: String) = {
+    val date = new DateTime(year.toInt, month.toInt, day.toInt, 12, 0, 0, 0)
+    date.getWeekyear().toString + '-' + date.getWeekOfWeekyear().toString
+  }
+
+  // update function for updateStateByKey
+  def updateFunc(values: Seq[(Int, Int)], runningCount: Option[(Int, Int)]):
+  Option[(Int, Int)] = {
+    val newCount1 = values.map(x => x._1).sum
+    val newCount2 = values.map(x => x._2).sum
+
+    val (oldCount1, oldCount2) = runningCount.getOrElse((0, 0))
+    Some((newCount1 + oldCount1, newCount2 + oldCount2))
   }
 }

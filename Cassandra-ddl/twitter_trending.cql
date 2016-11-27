@@ -1,5 +1,5 @@
 DROP KEYSPACE IF EXISTS twitterTrending;
-CREATE KEYSPACE twitter_trending WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 3 };
+CREATE KEYSPACE twitter_trending WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 use twitter_trending;
 
