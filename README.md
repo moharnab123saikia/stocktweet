@@ -72,5 +72,7 @@ ssh -i awskey.pem ec2-user@54.197.3.38
 cqlsh 172.31.8.2 9042
 
 ```
- 
+* force start cassandra
+```
+/usr/sbin/cassandra -f 
 ```
