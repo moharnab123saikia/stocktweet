@@ -15,7 +15,7 @@ Update the field - native_transport_port: <port-number> Cassandra.yaml file
 ```
 * coonect to master node with IP
 ```
-ssh -i awskey.pem ec2-user@54.144.220.136
+ssh -i awskey.pem ec2-user@54.227.15.252
 ```
 * Do sbt assembly
 ```
@@ -23,11 +23,11 @@ sbt assembly
 ```
 * Transfer files to master node
 ```
-scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@54.144.220.136:/home/ec2-user/
+scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
 
 #TestScala-assembly-1.0.jar
 
-scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@54.144.220.136:/home/ec2-user/
+scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
 ```
 * connect to EC2
 ````
@@ -93,7 +93,7 @@ https://docs.datastax.com/en/cassandra/3.x/cassandra/install/installRHEL.html
 * Installing Cassandra
 ```
 sudo nano /etc/yum.repos.d/datastax.repo
-Add
+-Add
 
 [datastax-ddc] 
 name = DataStax Repo for Apache Cassandra
@@ -103,5 +103,10 @@ gpgcheck = 0
 
 sudo yum install datastax-ddc
 
-Start Forcefully
+-Change permission
+ sudo chmod 777 /var/lib/cassandra/data
+ sudo chmod 777 /var/lib/cassandra/commitlog
+ sudo chmod 777 /var/lib/cassandra/saved_caches
+ sudo chmod 777 /var/lib/cassandra/hints
+-Start Forcefully
 /usr/sbin/cassandra -f 
