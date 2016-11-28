@@ -87,4 +87,21 @@ export JAVA_HOME=/usr/java/latest
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 * installing cassandra
+
 https://docs.datastax.com/en/cassandra/3.x/cassandra/install/installRHEL.html
+
+* Installing Cassandra
+```
+sudo nano /etc/yum.repos.d/datastax.repo
+Add
+
+[datastax-ddc] 
+name = DataStax Repo for Apache Cassandra
+baseurl = http://rpm.datastax.com/datastax-ddc/3.9
+enabled = 1
+gpgcheck = 0
+
+sudo yum install datastax-ddc
+
+Start Forcefully
+/usr/sbin/cassandra -f 
