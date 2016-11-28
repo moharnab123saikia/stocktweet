@@ -76,3 +76,14 @@ cqlsh 172.31.8.2 9042
 ```
 /usr/sbin/cassandra -f 
 ```
+* Install Java 8
+```wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.rpm
+sudo rpm -ivh jdk-8uversion-linux-x64.rpm
+Change Java path
+sudo alternatives --install /usr/bin/java java /usr/java/jdk1.8.0_version/bin/java 200000
+sudo alternatives --config jav
+export JAVA_HOME=/usr/java/latest
+export PATH=$JAVA_HOME/bin:$PATH
+```
+* installing cassandra
+https://docs.datastax.com/en/cassandra/3.x/cassandra/install/installRHEL.html
