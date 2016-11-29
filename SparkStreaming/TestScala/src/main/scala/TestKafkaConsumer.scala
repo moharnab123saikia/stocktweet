@@ -80,16 +80,26 @@ object TestKafkaConsumer {
   def getResult(granularity: String) = {
 
     try {
-
-      //val conf = new SparkConf().setMaster("spark://ip-172-31-8-2.ec2.internal:7077").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
-      val conf = new SparkConf().setMaster("local[*]").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
+      val conf = new SparkConf().
+        //        setMaster("spark://ec2-54-204-101-118.compute-1.amazonaws.com:7077")
+        setMaster("local[*]")
+        .setAppName("TestKafkaConsumer")
+        .set("spark.driver.allowMultipleContexts", "true")
+        .set("spark.shuffle.blockTransferService", "nio")
+      //              val conf  = new SparkConf(true)
+      //                    .setAppName("TestKafkaConsumer")
+      //                    .set("spark.cassandra.connection.host", "127.0.0.1")
+      //                    .setMaster("local")
+      //      val conf  = new SparkConf(true)
+      //        .setAppName("TestKafkaConsumer")
+      //        .set("spark.cassandra.connection.host", "127.0.0.1")
+      //        .setMaster("local")
 
       val ssc = new StreamingContext(conf, Seconds(15))
 
       ssc.checkpoint("twitter count")
 
       // Set up the input DStream to read from Kafka (in parallel)
-      //val host = "54.144.220.136:2181"
       val host = "localhost:2181"
       val group = "SparkStreaming"
       val inputTopic = "twitterStream"
@@ -109,6 +119,7 @@ object TestKafkaConsumer {
       // get texts
       val texts = tweets.map(x => compact(render(x \ "text")))
 
+      // texts.print()
 
       // map based on time granularity
 
@@ -129,7 +140,7 @@ object TestKafkaConsumer {
           date map { case (a, b, c, d, e, f, text) => (a + '-' + b + '-' + c + '-' + d + '-' + e + '-' + f, text) }
       }
 
-      // timeStep.print()g
+      // timeStep.print()
 
       // ticker frequency
       val mapResult = timeStep flatMap { case (a, b) => (patternTicker findAllIn b).toList.map(l => ((a, l), 1)) }
@@ -154,9 +165,24 @@ object TestKafkaConsumer {
       //        result.print();
 
       val keySpace = "twitter_series"
+      //
+      //      val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+      //      resultDay.print();
+      //      val sc = new SparkContext(conf)
+      //
+      //      val collection = sc.parallelize(Seq((2016,11,18,6,"GOOG", 3), (2016,11,19,6,"AMA", 5)))
+      //      collection.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+      //      resultDay.saveToCassandra(keySpace,
+      //        "trendingday",
+      //        SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"), writeConf = WriteConf(ttl = TTLOption.constant(604800)))
+
 
       granularity match {
 
+//        case "DAY" =>
+//          val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+//          //resultDay.print()
+//          resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
 
         case "YEAR" =>
           val resultYear = result.map { case (date, frequency, ticker, sentiment) => (date.toInt, frequency, ticker, sentiment) } // keyspace, table, column names
@@ -170,6 +196,7 @@ object TestKafkaConsumer {
           resultWeek.saveToCassandra(keySpace, "trendingweek", SomeColumns("year", "week", "frequency", "ticker", "sentiment"))
         case "DAY" =>
           val resultDay = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment) }
+          resultDay.print()
           resultDay.saveToCassandra(keySpace, "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
         case "HR" =>
           val resultHr = result.map { case (date, frequency, ticker, sentiment) => (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, frequency, ticker, sentiment) }
@@ -181,6 +208,8 @@ object TestKafkaConsumer {
 
       }
 
+      //sentiment.print()
+      //tickerSentiment.print()
 
       ssc.start()
       ssc.awaitTermination()
