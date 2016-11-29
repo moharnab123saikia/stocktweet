@@ -110,3 +110,11 @@ sudo yum install datastax-ddc
  sudo chmod 777 /var/lib/cassandra/hints
 -Start Forcefully
 /usr/sbin/cassandra -f 
+```
+* Install Kafka
+```
+wget http://apache.claz.org/kafka/0.10.1.0/kafka-0.10.1.0-src.tgz
+tar -zxvf kafka-0.10.1.0-src.tgz
+mv kafka-0.10.1.0-src kafka-0.10.1.0
+```
+```
