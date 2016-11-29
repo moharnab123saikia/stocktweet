@@ -26,8 +26,8 @@ sbt assembly
 scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
 
 #TestScala-assembly-1.0.jar
+scp -i awskey.pem /home/sud/Desktop/DIC/new/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
 
-scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
 ```
 * connect to EC2
 ````
@@ -69,7 +69,7 @@ ssh -i awskey.pem ec2-user@54.197.3.38
 ```
 * cqlsh
 ```
-cqlsh 172.31.8.2 9042
+cqlsh 172.31.6.108 9042
 
 ```
 * force start cassandra
@@ -117,4 +117,4 @@ wget http://download.nextag.com/apache/kafka/0.10.1.0/kafka_2.11-0.10.1.0.tgz
 tar -zxvf kafka-0.10.1.0-src.tgz
 mv kafka-0.10.1.0-src kafka-0.10.1.0
 ```
-```
+* Open all port for master IP.
