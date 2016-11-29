@@ -113,7 +113,7 @@ sudo yum install datastax-ddc
 ```
 * Install Kafka
 ```
-wget http://apache.claz.org/kafka/0.10.1.0/kafka-0.10.1.0-src.tgz
+wget http://download.nextag.com/apache/kafka/0.10.1.0/kafka_2.11-0.10.1.0.tgz
 tar -zxvf kafka-0.10.1.0-src.tgz
 mv kafka-0.10.1.0-src kafka-0.10.1.0
 ```
