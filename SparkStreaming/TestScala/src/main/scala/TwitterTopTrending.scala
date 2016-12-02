@@ -72,7 +72,7 @@ object TwitterTopTrending {
 
   def main(args: Array[String]) {
     println("Hello world from Twitter Top Trending...")
-    getResult(args(0))
+    getResult("MIN")
   }
 
 
@@ -155,7 +155,6 @@ object TwitterTopTrending {
     val topicMap = Map(inputTopic -> 1)
     val kafkaStream = KafkaUtils.createStream(ssc, host, group, topicMap).map(_._2)
 
-    kafkaStream.print()
     // parse JSON
     val tweets = kafkaStream.map(x => parse(x))
 
@@ -219,8 +218,7 @@ object TwitterTopTrending {
     val resultTimeStamped = resultTopFive.map { case (a, (b, c, d)) => (System.currentTimeMillis(), a, b, c, d) }
 
     // save to cassandra
-    println("Saving to DB")
-//    resultTimeStamped.print()
+    resultTimeStamped.print()
      resultTimeStamped.saveToCassandra("twitter_trending_streaming", "toptrending30min", SomeColumns("timestamp", "id", "ticker", "frequency", "sentiment"))
 
     ssc.start()
