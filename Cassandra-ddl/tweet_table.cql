@@ -1,4 +1,4 @@
-DROP KEYSPACE IF EXISTS latesttweets;
+DROP KEYSPACE IF EXISTS latest_tweets;
 CREATE KEYSPACE latest_tweets WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 use latest_tweets;

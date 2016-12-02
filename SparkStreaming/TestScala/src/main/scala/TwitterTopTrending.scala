@@ -227,7 +227,7 @@ object TwitterTopTrending {
     val resultTopFive = resultIndexed.filter { case (a, (b, c, d)) => (a >= 0 && a < 5) }
 
     // add a timestamp
-    val resultTimeStamped = resultTopFive.map { case (a, (b, c, d)) => (System.currentTimeMillis, a, b, c, d) }
+    val resultTimeStamped = resultTopFive.map { case (a, (b, c, d)) => (System.currentTimeMillis(), a, b, c, d) }
 
     // save to cassandra
     println("Saving to DB")

@@ -1,4 +1,4 @@
-DROP KEYSPACE IF EXISTS twitterSeriesStreaming;
+DROP KEYSPACE IF EXISTS twitter_series_streaming;
 CREATE KEYSPACE twitter_series_streaming WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
 
 use twitter_series_streaming;
