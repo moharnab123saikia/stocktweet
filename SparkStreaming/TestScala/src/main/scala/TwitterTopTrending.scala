@@ -134,7 +134,8 @@ object TwitterTopTrending {
 
     // create spark configuration
 
-    val conf = new SparkConf().setMaster("local[*]").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
+//    val conf = new SparkConf().setMaster("local[*]").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
+    val conf = new SparkConf().setMaster("spark://ip-172-31-6-108.ec2.internal:7077").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
 
     // create streaming context
     val ssc = new StreamingContext(conf, Seconds(5))
@@ -146,12 +147,14 @@ object TwitterTopTrending {
     // create Kakfa stream
     // Set up the input DStream to read from Kafka (in parallel)
     // create a DStream from Kafka
-    val host = "localhost:2181"
+//    val host = "localhost:2181"
+    val host = "54.227.15.252:2181"
+
     val group = "SparkStreaming"
     val inputTopic = "twitterStream"
     val topicMap = Map(inputTopic -> 1)
     val kafkaStream = KafkaUtils.createStream(ssc, host, group, topicMap).map(_._2)
-    
+
     kafkaStream.print()
     // parse JSON
     val tweets = kafkaStream.map(x => parse(x))
