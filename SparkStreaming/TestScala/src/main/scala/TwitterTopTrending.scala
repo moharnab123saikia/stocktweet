@@ -133,10 +133,7 @@ object TwitterTopTrending {
   def getResult(granularity: String) = {
 
     // create spark configuration
-//    val confSparkCassandra = new SparkConf()
-//      .setMaster("local[*]")
-//      .setAppName("TwitterTopTrending")
-//      .set("spark.driver.allowMultipleContexts", "true")
+
     val conf = new SparkConf().setMaster("local[*]").setAppName("TestCassandra").set("spark.driver.allowMultipleContexts", "true")
 
     // create streaming context
@@ -148,24 +145,13 @@ object TwitterTopTrending {
 
     // create Kakfa stream
     // Set up the input DStream to read from Kafka (in parallel)
-//    val zkQuorum = "localhost:2181"
-//    val group = "SparkStreaming"
-//    val inputTopic = "twitterStream"
-//    val topicMap = Map(inputTopic -> 1)
-//    val numPartitionsOfInputTopic = 1
-
     // create a DStream from Kafka
     val host = "localhost:2181"
     val group = "SparkStreaming"
     val inputTopic = "twitterStream"
     val topicMap = Map(inputTopic -> 1)
     val kafkaStream = KafkaUtils.createStream(ssc, host, group, topicMap).map(_._2)
-
-
-
-
-//    val lines = KafkaUtils.createStream(ssc, zkQuorum, group, topicMap).map(_._2)
-
+    
     kafkaStream.print()
     // parse JSON
     val tweets = kafkaStream.map(x => parse(x))
