@@ -121,7 +121,7 @@ mv kafka-0.10.1.0-src kafka-0.10.1.0
 
 
 
-* Background
+* Run in background
 ```
 nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TwitterTopTrending /home/ec2-user/TestScala-assembly-1.0.jar &
 nohup bin/zookeeper-server-start.sh config/zookeeper.properties &
