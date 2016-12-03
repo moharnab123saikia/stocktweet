@@ -6,6 +6,8 @@ from twython import TwythonStreamer
 import pprint
 import re
 import json
+from cashtagSet import cashtagSet
+
 
 # kafka setup
 
@@ -32,11 +34,15 @@ OAUTHTOKEN = "102364682-rjjnlF4WvdblszBYm47wexCtM3iJMUgefK2pf5AA"
 OAUTHTOKENSECRET="U93jNaO0EKTUJdWc92BOggPG2KfHSDfY40CM0mgWIYnob"
 
 try:
-	stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
-	twitterFilter = cashtag('NYSE100')+cashtag('NYSE100')+cashtag('DOW30')+cashtag('COMPANIES')
-	results = stream.statuses.filter(track=twitterFilter)
+    stream = MyStreamer(CONSUMERKEY, CONSUMERSECRET, OAUTHTOKEN, OAUTHTOKENSECRET)
+    #twitterFilter = cashtag('NYSE100')+cashtag('NASDAQ100')+cashtag('DOW30')+cashtag('COMPANIES')+cashtag('SP500')
+    twitterFilterSet = cashtagSet('NYSE100')+cashtagSet('NASDAQ100')+cashtagSet('DOW30')+cashtagSet('COMPANIES')+cashtagSet('SP500')
+    print(len(twitterFilterSet.split(',')))
+    #print(twitterFilter.split(','))
 
-	print(results)
+    results = stream.statuses.filter(track=twitterFilterSet)
+
+    #print(results)
 
 except Exception, e:
 	print(e)
