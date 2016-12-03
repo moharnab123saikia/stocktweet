@@ -133,3 +133,12 @@ nohup python twitterAPI.py &
 ```
 nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TwitterTopTrending /home/ec2-user/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar &
 ```
+
+* Remove files from S3
+```
+aws s3 rm s3://dicbatch/ --recursive
+```
+* S3 to Cassandra
+```
+/home/sud/spark-2.0.2-bin-hadoop2.7/bin/spark-submit --class "TwitterTimeSeries"  /home/sud/Desktop/DIC/new/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "HR" "s3n://dicbatch/*"
+```

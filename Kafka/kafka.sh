@@ -25,6 +25,8 @@ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 -
 # /home/sud/kafka_2.11-0.10.0.0/
 bin/kafka-topics.sh --list --zookeeper localhost:2181
 
+# check data in the topic
+./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twitterStream --from-beginning
 
 # open a new tab again
 #WID=$(xprop -root | grep "_NET_ACTIVE_WINDOW(WINDOW)"| awk '{print $5}')
