@@ -11,11 +11,11 @@ Update the field - native_transport_port: <port-number> Cassandra.yaml file
 
 * Create cluster with 5 slaves
 ```
-./spark-ec2 --key-pair=awskey -s 5 --instance-type=m4.large --spot-price=0.02  --spark-version="2.0.2" --ebs-vol-size=40 --identity-file=awskey.pem --region=us-east-1 --zone=us-east-1b launch spark_cluster
+./spark-ec2 --key-pair=awskey -s 5 --instance-type=m4.xlarge --spark-version="2.0.2" --ebs-vol-size=80 --identity-file=awskey.pem --region=us-east-1 --zone=us-east-1b launch test_spark_cluster
 ```
 * coonect to master node with IP
 ```
-ssh -i awskey.pem ec2-user@54.227.15.252
+ssh -i awskey.pem ec2-user@52.207.228.147
 ```
 * Do sbt assembly
 ```
@@ -23,10 +23,10 @@ sbt assembly
 ```
 * Transfer files to master node
 ```
-scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
+scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
 
 #TestScala-assembly-1.0.jar
-scp -i awskey.pem /home/sud/Desktop/DIC/new/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@54.227.15.252:/home/ec2-user/
+scp -i awskey.pem /home/sud/Desktop/DIC/new/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
 
 ```
 * connect to EC2
@@ -141,4 +141,10 @@ aws s3 rm s3://dicbatch/ --recursive
 * S3 to Cassandra
 ```
 /home/sud/spark-2.0.2-bin-hadoop2.7/bin/spark-submit --class "TwitterTimeSeries"  /home/sud/Desktop/DIC/new/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "HR" "s3n://dicbatch/*"
+```
+
+* Install SBT
+```
+curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+sudo yum install sbt
 ```

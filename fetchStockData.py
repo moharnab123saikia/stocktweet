@@ -24,9 +24,9 @@ topicName = 'stockData'
 path = '/tmp/'
 
 
-producer.send_messages(topicName,"Hello Fucking Kafka")
+# producer.send_messages(topicName,"Hello Fucking Kafka")
 
-producer.send_messages(topicName,"Hello Fucking Zookeeper")
+# producer.send_messages(topicName,"Hello Fucking Zookeeper")
 
 def get_google_finance_intraday(ticker, period=60, days=1):
     """
@@ -94,4 +94,4 @@ def produceData(ticker):
 
 if __name__ == '__main__':
     get_google_finance_intraday("AAPL")
-    #produceData("AAPL")
+    produceData("AAPL")
