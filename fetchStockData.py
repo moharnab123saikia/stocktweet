@@ -1,4 +1,4 @@
-#!/usr/bin/env python 
+#!/usr/bin/env python
 """
 Retrieve intraday stock data from Google Finance.
 """
@@ -71,14 +71,14 @@ def get_google_finance_intraday(ticker, period=60, days=1):
     else:
         df =  pd.DataFrame(rows, index=pd.DatetimeIndex(times, name='Date'))
 
-    df.to_csv(path+"New.csv", sep=',')
+    df.to_csv(path+ticker+"New.csv", sep=',')
 
 def produceData(ticker):
     # produce data to Kafka from reading from the csv file
-    fileNameNew = path+"New.csv"
+    fileNameNew = path+ticker+"New.csv"
     with open(fileNameNew) as f1:
         lineset = set(f1)
-    
+
     print 'start writing to Kafka...'
     transformedLine = ''
     for lineT in lineset:
@@ -86,12 +86,12 @@ def produceData(ticker):
             if len(line)==6: # check for correctness
                 newLine = [str(time.time()), ticker]
                 transformedLine = ','.join(newLine) +','+','.join(line)
-                print(transformedLine)
+                #print(transformedLine)
                 producer.send_messages(topicName,transformedLine)
             else:
                 print "-----------------------------------" + str(len(line))
 
 
 if __name__ == '__main__':
-    get_google_finance_intraday("AAPL")
-    produceData("AAPL")
+    get_google_finance_intraday(sys.argv[1])
+    produceData(sys.argv[1])
