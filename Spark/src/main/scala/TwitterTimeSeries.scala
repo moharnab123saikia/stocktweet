@@ -116,7 +116,7 @@ object TwitterTimeSeries {
   {
     val conf  = new SparkConf(true)
       .setAppName("Trending Twitter")
-      .set("spark.cassandra.connection.host", "54.227.15.252")
+      .set("spark.cassandra.connection.host", "52.207.228.147")
 
 //    val conf = new SparkConf().setMaster("spark://ip-172-31-6-108.ec2.internal:7077").setAppName("TwitterTimeSeries").set("spark.driver.allowMultipleContexts", "true")
     //spark://ip-172-31-6-108.ec2.internal:7077
@@ -134,96 +134,87 @@ object TwitterTimeSeries {
     // convert tweets to JSON
     val tweets = rawUsersRDD.map( x=> parse(x))
 
-    tweets.collect().foreach(println)
-
-    // calculate importance
-    //val followers = tweets.map(x=>compact(render(x \"user"\"followers_count")))
-    //val friends = tweets.map(x=>compact(render(x \"user"\"friends_count")))
-    //val importance = (followers.map(x=> x.toInt) zip friends.map(x=> x.toInt) ) map {case(a,b) => //if(b>10) a/1.0/b else 1}
-
-    // get job description
-    //val job = tweets.map(x=>compact(render(x \"user"\"description")))
-
     // get date
-//    val dateString = tweets.map(x=>compact(render(x \ "created_at" )))
-//    val date = dateString.map(x=>getTime(x))
-//
-//    // get texts
-//    val texts = tweets.map(x=>compact(render(x \ "text")))
-//
-//    val timeStep = granularity match
-//    {
-//      case "YEAR" =>
-//        date map {case(a,b,c,d,e,f)=>a}
-//      case "MONTH" =>
-//        date map {case(a,b,c,d,e,f)=>(a+'-'+b)}
-//      case "WEEK"=>
-//        date map {case(a,b,c,d,e,f)=>getWeek(a,b,c)}
-//      case "DAY" =>
-//        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c)}
-//      case "HR" =>
-//        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d)}
-//      case "MIN" =>
-//        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d+'-'+e)}
-//      case "SEC" =>
-//        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d+'-'+e+'-'+f)}
-//    }
-//
-//    // ticker frequency
-//    val mapResult = (timeStep zip texts) flatMap{case(a,b)=> (patternTicker findAllIn b).map(l=>((a,l),1))}
-//    val tickerFrequency = mapResult.reduceByKey(_+_)
-//
-//    // ticker sentiment
-//    val words = (timeStep zip texts) flatMap{ case(a,b)=> (b.trim().toLowerCase().split(patternWord)).map(c=>((a,b),getWordSentiment(c))) }
-//    val sentiment = words.reduceByKey(_+_)
-//    val tickerSentiment = sentiment.flatMap{ case((a,b),c) =>  (patternTicker findAllIn b).map(l=>((a,l),c)) }.reduceByKey(_+_)
-//
-//
-//    // join both table
-//    val resultPair = tickerFrequency.join(tickerSentiment).map{case((a,b),(c,d))=>((a,c),(b,d))}
-//
-//    //val result1 = resultPair.sortByKey(false).map{case((a,b),(c,d))=>(a,(b,c,d))}.groupByKey.map{case(a,b)=>(a->(b.toList.take(10)))}
-//
-//    // sort by frequency
-//    val result = resultPair.sortByKey(false).map{case((a,b),(c,d))=>(a,b,c.split('$')(1),d)}
-//
-//    // write to cassandra
-//    granularity match
-//    {
-//      case "YEAR" =>
-//        val resultYear = result.map{case(date, frequency, ticker, sentiment)=> (date.toInt, frequency, ticker, sentiment)} // keyspace, table, column names
-//        resultYear.saveToCassandra("twitterseries", "trendingyear", SomeColumns("year", "frequency", "ticker", "sentiment"))
-//      case "MONTH" =>
-//        val resultMonth = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment)}
-//        resultMonth.saveToCassandra("twitterseries", "trendingmonth", SomeColumns("year", "month", "frequency", "ticker", "sentiment"))
-//      case "WEEK"=>
-//        val resultWeek = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment)}
-//        resultWeek.saveToCassandra("twitterseries", "trendingweek", SomeColumns("year", "week", "frequency", "ticker", "sentiment"))
-//      case "DAY" =>
-//        val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
-//        resultDay foreach println
-//        resultDay.saveToCassandra("twitterseries", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
-//      case "HR" =>
-//        val resultHr = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, frequency, ticker, sentiment)}
-//        resultHr.saveToCassandra("twitterseries", "trendinghour", SomeColumns("year", "month", "day", "hour", "frequency", "ticker", "sentiment"))
-//      case "MIN" =>
-//        val resultMin = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, date.split('-')(4).toInt, frequency, ticker, sentiment)}
-//        resultMin.saveToCassandra("twitterseries", "trendingminute", SomeColumns( "year", "month", "day", "hour", "minute", "frequency", "ticker", "sentiment"))
-//      //case "SEC" =>
-//      //result.map{case((a,ticker),b,c,d,e,f)=> (ticker, a.split('-')(0).toInt, a.split('-')(1).toInt, a.split('-')(2).toInt, a.split('-')(3).toInt, a.split('-')(4).toInt, a.split('-')(5).toInt, b, c, d, e, f)}
-//      //resultCassandra.saveToCassandra("stockdata", "daystock", SomeColumns("ticker", "year", "month", "day", "hour", "minute", "second", "high", "low", "open", "close", "volume"))
-//    }
+    val dateString = tweets.map(x=>compact(render(x \ "created_at" )))
+    val date = dateString.map(x=>getTime(x))
+
+    // get texts
+    val texts = tweets.map(x=>compact(render(x \ "text")))
+
+    val timeStep = granularity match
+    {
+      case "YEAR" =>
+        date map {case(a,b,c,d,e,f)=>a}
+      case "MONTH" =>
+        date map {case(a,b,c,d,e,f)=>(a+'-'+b)}
+      case "WEEK"=>
+        date map {case(a,b,c,d,e,f)=>getWeek(a,b,c)}
+      case "DAY" =>
+        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c)}
+      case "HR" =>
+        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d)}
+      case "MIN" =>
+        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d+'-'+e)}
+      case "SEC" =>
+        date map {case(a,b,c,d,e,f)=>(a+'-'+b+'-'+c+'-'+d+'-'+e+'-'+f)}
+    }
+
+    // ticker frequency
+    val mapResult = (timeStep zip texts) flatMap{case(a,b)=> (patternTicker findAllIn b).map(l=>((a,l),1))}
+    val tickerFrequency = mapResult.reduceByKey(_+_)
+
+    // ticker sentiment
+    val words = (timeStep zip texts) flatMap{ case(a,b)=> (b.trim().toLowerCase().split(patternWord)).map(c=>((a,b),getWordSentiment(c))) }
+    val sentiment = words.reduceByKey(_+_)
+    val tickerSentiment = sentiment.flatMap{ case((a,b),c) =>  (patternTicker findAllIn b).map(l=>((a,l),c)) }.reduceByKey(_+_)
+
+
+    // join both table
+    val resultPair = tickerFrequency.join(tickerSentiment).map{case((a,b),(c,d))=>((a,c),(b,d))}
+
+    //val result1 = resultPair.sortByKey(false).map{case((a,b),(c,d))=>(a,(b,c,d))}.groupByKey.map{case(a,b)=>(a->(b.toList.take(10)))}
+
+    // sort by frequency
+    val result = resultPair.sortByKey(false).map{case((a,b),(c,d))=>(a,b,c.split('$')(1),d)}
+
+    // write to cassandra
+    granularity match
+    {
+      case "YEAR" =>
+        val resultYear = result.map{case(date, frequency, ticker, sentiment)=> (date.toInt, frequency, ticker, sentiment)} // keyspace, table, column names
+        resultYear.saveToCassandra("twitter_series", "trendingyear", SomeColumns("year", "frequency", "ticker", "sentiment"))
+      case "MONTH" =>
+        val resultMonth = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment)}
+        resultMonth.saveToCassandra("twitter_series", "trendingmonth", SomeColumns("year", "month", "frequency", "ticker", "sentiment"))
+      case "WEEK"=>
+        val resultWeek = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, frequency, ticker, sentiment)}
+        resultWeek.saveToCassandra("twitter_series", "trendingweek", SomeColumns("year", "week", "frequency", "ticker", "sentiment"))
+      case "DAY" =>
+        val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
+        resultDay foreach println
+        resultDay.saveToCassandra("twitter_series", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
+      case "HR" =>
+        val resultHr = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, frequency, ticker, sentiment)}
+        resultHr.collect().foreach(println)
+        resultHr.saveToCassandra("twitter_series", "trendinghour", SomeColumns("year", "month", "day", "hour", "frequency", "ticker", "sentiment"))
+      case "MIN" =>
+        val resultMin = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, date.split('-')(4).toInt, frequency, ticker, sentiment)}
+        resultMin.saveToCassandra("twitter_series", "trendingminute", SomeColumns( "year", "month", "day", "hour", "minute", "frequency", "ticker", "sentiment"))
+      //case "SEC" =>
+      //result.map{case((a,ticker),b,c,d,e,f)=> (ticker, a.split('-')(0).toInt, a.split('-')(1).toInt, a.split('-')(2).toInt, a.split('-')(3).toInt, a.split('-')(4).toInt, a.split('-')(5).toInt, b, c, d, e, f)}
+      //resultCassandra.saveToCassandra("stockdata", "daystock", SomeColumns("ticker", "year", "month", "day", "hour", "minute", "second", "high", "low", "open", "close", "volume"))
+    }
 
 
   }
 
   def main(args: Array[String])
   {
-//    if (args.length != 2)
-//    {
-//      System.err.println("twitterseries requires two argument")
-//      System.exit(1)
-//    }
+    if (args.length != 2)
+    {
+      System.err.println("twitter_series requires two argument")
+      System.exit(1)
+   }
     getResult(args(0),args(1))
 //    getResult("MIN","");
 

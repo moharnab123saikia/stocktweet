@@ -27,6 +27,7 @@ bin/kafka-topics.sh --list --zookeeper localhost:2181
 
 # check data in the topic
 ./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic twitterStream --from-beginning
+./bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic stockData --from-beginning
 
 # open a new tab again
 #WID=$(xprop -root | grep "_NET_ACTIVE_WINDOW(WINDOW)"| awk '{print $5}')
