@@ -24,10 +24,6 @@ topicName = 'stockData'
 path = '/tmp/'
 
 
-# producer.send_messages(topicName,"Hello Fucking Kafka")
-
-# producer.send_messages(topicName,"Hello Fucking Zookeeper")
-
 def get_google_finance_intraday(ticker, period=60, days=1):
     """
     Retrieve intraday stock data from Google Finance.
@@ -87,11 +83,14 @@ def produceData(ticker):
                 newLine = [str(time.time()), ticker]
                 transformedLine = ','.join(newLine) +','+','.join(line)
                 #print(transformedLine)
-                producer.send_messages(topicName,transformedLine)
+                #producer.send_messages(topicName,transformedLine)
             else:
                 print "-----------------------------------" + str(len(line))
 
 
 if __name__ == '__main__':
-    get_google_finance_intraday(sys.argv[1])
+    get_google_finance_intraday(ticker = sys.argv[1],days = 15)
     produceData(sys.argv[1])
+
+    # get_google_finance_intraday(ticker="AAPL",days = 30)
+    # produceData("AAPL")
