@@ -148,3 +148,9 @@ aws s3 rm s3://dicbatch/ --recursive
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
 sudo yum install sbt
 ```
+
+* Process TwitterTopTrending 
+```
+./spark-submit --class "TwitterTimeSeries"  /home/sud/Desktop/DIC/new/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "HR" "s3n://dicbatch/*"
+
+```
