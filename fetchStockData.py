@@ -83,7 +83,7 @@ def produceData(ticker):
                 newLine = [str(time.time()), ticker]
                 transformedLine = ','.join(newLine) +','+','.join(line)
                 #print(transformedLine)
-                #producer.send_messages(topicName,transformedLine)
+                producer.send_messages(topicName,transformedLine)
             else:
                 print "-----------------------------------" + str(len(line))
 
