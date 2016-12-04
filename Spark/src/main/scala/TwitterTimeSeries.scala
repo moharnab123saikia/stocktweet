@@ -200,9 +200,6 @@ object TwitterTimeSeries {
       case "MIN" =>
         val resultMin = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, date.split('-')(4).toInt, frequency, ticker, sentiment)}
         resultMin.saveToCassandra("twitter_series", "trendingminute", SomeColumns( "year", "month", "day", "hour", "minute", "frequency", "ticker", "sentiment"))
-      //case "SEC" =>
-      //result.map{case((a,ticker),b,c,d,e,f)=> (ticker, a.split('-')(0).toInt, a.split('-')(1).toInt, a.split('-')(2).toInt, a.split('-')(3).toInt, a.split('-')(4).toInt, a.split('-')(5).toInt, b, c, d, e, f)}
-      //resultCassandra.saveToCassandra("stockdata", "daystock", SomeColumns("ticker", "year", "month", "day", "hour", "minute", "second", "high", "low", "open", "close", "volume"))
     }
 
 
