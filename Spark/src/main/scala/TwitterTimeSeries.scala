@@ -191,7 +191,6 @@ object TwitterTimeSeries {
         resultWeek.saveToCassandra("twitter_series", "trendingweek", SomeColumns("year", "week", "frequency", "ticker", "sentiment"))
       case "DAY" =>
         val resultDay = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, frequency, ticker, sentiment)}
-        resultDay foreach println
         resultDay.saveToCassandra("twitter_series", "trendingday", SomeColumns("year", "month", "day", "frequency", "ticker", "sentiment"))
       case "HR" =>
         val resultHr = result.map{case(date, frequency, ticker, sentiment)=> (date.split('-')(0).toInt, date.split('-')(1).toInt, date.split('-')(2).toInt, date.split('-')(3).toInt, frequency, ticker, sentiment)}

@@ -20,7 +20,7 @@ import sys
 # kafka setup
 mykafka = KafkaClient("localhost:9092")
 producer = SimpleProducer(mykafka)
-topicName = 'stockData'
+topicName = 'stockStream'
 path = '/tmp/'
 
 
@@ -73,6 +73,7 @@ def produceData(ticker):
     # produce data to Kafka from reading from the csv file
     fileNameNew = path+ticker+"New.csv"
     with open(fileNameNew) as f1:
+        next(f1, None)
         lineset = set(f1)
 
     print 'start writing to Kafka...'
@@ -92,5 +93,5 @@ if __name__ == '__main__':
     get_google_finance_intraday(ticker = sys.argv[1],days = 15)
     produceData(sys.argv[1])
 
-    # get_google_finance_intraday(ticker="AAPL",days = 30)
+    # get_google_finance_intraday(ticker="AAPL",days = 1)
     # produceData("AAPL")
