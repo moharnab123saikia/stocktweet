@@ -16,6 +16,9 @@ Update the field - native_transport_port: <port-number> Cassandra.yaml file
 * coonect to master node with IP
 ```
 ssh -i awskey.pem ec2-user@52.207.228.147
+
+# S3 instance
+ssh -i awskey.pem ec2-user@52.91.195.78
 ```
 * Do sbt assembly
 ```
@@ -39,7 +42,7 @@ ssh -i awskey.pem ec2-user@ec2-54-147-248-95.compute-1.amazonaws.com
 /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TestKafkaConsumer /home/ec2-user/testscala_2.11-1.0.jar
 
 # after assembly
-/root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TestKafkaConsumer /home/ec2-user/TestScala-assembly-1.0.jar
+nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TestKafkaConsumer /home/ec2-user/TestScala-assembly-1.0.jar &
 ```
 * copy rsa.pub to all slaves - not necessary
 ```
@@ -137,6 +140,13 @@ nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector
 * Remove files from S3
 ```
 aws s3 rm s3://dicbatch/ --recursive
+
+aws s3 cp ./ s3://twitterall/ --recursive
+aws s3 rm s3://twitterall/????.json --recursive
+
+aws s3 rm s3://twitterall/ --recursive --exclude "new*.json"
+
+
 ```
 * S3 to Cassandra
 ```
@@ -149,8 +159,29 @@ curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm
 sudo yum install sbt
 ```
 
-* Process TwitterTopTrending 
+* Batch Processing 
 ```
 ./spark-submit --class "TwitterTimeSeries"  /home/sud/Desktop/DIC/new/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "HR" "s3n://dicbatch/*"
+/root/spark/bin/spark-submit --class "TwitterTopTrending"  /home/ec2-user/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "HR" "s3n://dicbatch/*"
 
+/root/spark/bin/spark-submit --class "TwitterTimeSeries"  /home/ec2-user/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "MIN" "s3n://dicbatch/*"
+
+/root/spark/bin/spark-submit --class "GetStockData"  /home/ec2-user/stocktweet/Spark/target/scala-2.11/Spark-assembly-1.0.jar "MIN" "s3n://stockdic/*"
+
+nohup /root/spark/bin/spark-submit --class "TwitterTopTrending"  /home/ec2-user/Spark-assembly-1.0.jar "HR" "s3n://twitterall/*" &
+
+
+```
+* Check Bucket size
+```
+aws s3api list-objects --bucket dicbatch --output json --query "[sum(Contents[].Size), length(Contents[])]" | awk 'NR!=2 {print $0;next} NR==2 {print $0/1024/1024/1024" GB"}'
+aws s3api list-objects --bucket stockdic --output json --query "[sum(Contents[].Size), length(Contents[])]" | awk 'NR!=2 {print $0;next} NR==2 {print $0/1024/1024/1024" GB"}'
+
+aws s3api list-objects --bucket twitterall --output json --query "[sum(Contents[].Size), length(Contents[])]" | awk 'NR!=2 {print $0;next} NR==2 {print $0/1024/1024/1024" GB"}'
+
+
+```
+* Leave safe mode hadoop
+```
+/root/ephemeral-hadoop/bin//hdfs dfsadmin -safemode leave
 ```
