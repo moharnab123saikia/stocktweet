@@ -17,6 +17,9 @@ nohup bin/zookeeper-server-start.sh config/zookeeper.properties &
 x-terminal-emulator -e 
 nohup bin/kafka-server-start.sh config/server.properties &
 
+nohup bin/kafka-server-start.sh config/server-1.properties &
+
+
 x-terminal-emulator -x-terminal-emulator
 # create three topics
 bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic twitterStream
