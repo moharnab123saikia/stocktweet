@@ -18,7 +18,7 @@ def get_lock(process_name):
         print 'Process already running. Exiting..'
         sys.exit()
 
-get_lock('stockTwits streaming')
+get_lock('Twitter streaming')
 
 
 
@@ -28,7 +28,7 @@ from kafka import KafkaClient, SimpleConsumer
 from datetime import datetime
 from docopt import docopt
 
-kafka = KafkaClient("localhost:9092")
+kafka = KafkaClient("localhost:9093")
 
 tempfile_path = None
 tempfile = None
@@ -91,10 +91,10 @@ def flush_to_hdfs(output_dir, topic):
     tempfile.close()
     hadoop_dir = "%s/%s" % (output_dir, topic)
     hadoop_path = hadoop_dir + "/%s_%s.dat" % (timestamp, batch_counter)
-    print "/usr/bin/hdfs dfs -mkdir %s 2> /dev/null" % hadoop_dir
-    os.system("/usr/bin/hdfs dfs -mkdir %s 2> /dev/null" % hadoop_dir)
-    print "/usr/bin/hdfs dfs -put -f %s %s 2> /dev/null" % (tempfile_path, hadoop_path)
-    os.system("/usr/bin/hdfs dfs -put -f %s %s 2> /dev/null" % (tempfile_path, hadoop_path))
+    print "/root/ephemeral-hdfs/bin/hdfs dfs -mkdir %s 2> /dev/null" % hadoop_dir
+    os.system("/root/ephemeral-hdfs/bin/hdfs dfs -mkdir %s 2> /dev/null" % hadoop_dir)
+    print "/root/ephemeral-hdfs/bin/hdfs dfs -put -f %s %s 2> /dev/null" % (tempfile_path, hadoop_path)
+    os.system("/root/ephemeral-hdfs/bin/hdfs dfs -put -f %s %s 2> /dev/null" % (tempfile_path, hadoop_path))
     os.remove(tempfile_path)
     batch_counter += 1
     tempfile_path = "/tmp/kafka_%s_%s_%s_%s.dat" % (topic, group, timestamp, batch_counter)
@@ -109,13 +109,13 @@ def consume_topic(topic, group, output_dir, frequency):
     kafka_consumer = SimpleConsumer(kafka, group, topic, max_buffer_size=1310720000)
 
     #open file for writing
-    tempfile_path = "/tmp/kafka_stockTwits_%s_%s_%s_%s.dat" % (topic, group, timestamp, batch_counter)
+    tempfile_path = "/tmp/kafka_%s_%s_%s_%s.dat" % (topic, group, timestamp, batch_counter)
     tempfile = open(tempfile_path,"w")
     log_has_at_least_one = False #did we log at least one entry?
     while True:
         messages = kafka_consumer.get_messages(count=1000, block=False) #get 5000 messages at a time, non blocking
         if not messages:
-	       os.system("sleep 300s") # sleep 5mins
+	       os.system("sleep 120s") # sleep 5mins
 	       continue
 
         for message in messages: #OffsetAndMessage(offset=43, message=Message(magic=0, attributes=0, key=None, value='some message'))
@@ -134,8 +134,8 @@ def consume_topic(topic, group, output_dir, frequency):
 
 if __name__ == '__main__':
     group           = "HDFSConsumer"
-    output          = "/user/data"
-    topic           = "stockTwitsStream"
+    output          = "/home/ec2-user"
+    topic           = "twitterAllStream"
     frequency       = "1"
 
     print "\nConsuming topic: [%s] into HDFS" % topic

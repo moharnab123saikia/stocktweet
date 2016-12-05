@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "TwitterAllStream.py", line 3, in <module>
+    import tweepy
+ImportError: No module named tweepy
+Traceback (most recent call last):
+  File "TwitterAllStream.py", line 4, in <module>
+    import configparser
+ImportError: No module named configparser
+TwitterAllStream.py:44: DeprecationWarning: You passed a bytestring as `filenames`. This will not work on Python 3. Use `cp.read_file()` or switch to using Unicode strings across the board.
+  config.read('twitter.txt')
+/usr/local/lib/python2.6/site-packages/kafka/__init__.py:42: DeprecationWarning: The legacy KafkaClient interface has been moved to kafka.SimpleClient - this import will break in a future release
+  ' future release', DeprecationWarning)
+/usr/local/lib/python2.6/site-packages/requests/packages/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.6/site-packages/requests/packages/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
