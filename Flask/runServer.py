@@ -74,7 +74,7 @@ def live_streaming():
         temp = [ticker[i], freq[i], color1[i], ticker[i]]
         data2.append(temp)
 
-    print data2
+    #print data2
     # text=[]
     # rowsTweets = sessionTweets.execute("select * from recenttweets limit 10");
     # for r1 in rowsTweets:
