@@ -1,4 +1,3 @@
-
 from flask import Flask, render_template, redirect, url_for, request, jsonify
 from cassandra.cluster import Cluster
 import time
@@ -18,22 +17,23 @@ eastern=pytz.timezone('US/Eastern')
 
 app = Flask(__name__)
 
-clusterTwitterSeries = Cluster(['54.67.105.220'])
-sessionTwitterSeries = clusterTwitterSeries.connect('twitterseries')
+clusterTwitterSeries = Cluster(['52.207.228.147'])
+sessionTwitterSeries = clusterTwitterSeries.connect('twitter_series')
 
 
-clusterTopTrendingStreaming = Cluster(['54.67.105.220'])
-sessionTopTrendingStreaming = clusterTopTrendingStreaming.connect('twittertrendingstreaming')
+clusterTopTrendingStreaming = Cluster(['52.207.228.147'])
+sessionTopTrendingStreaming = clusterTopTrendingStreaming.connect('twitter_trending_streaming')
 
 
-clusterTopTrending= Cluster(['54.67.105.220'])
-sessionTopTrending= clusterTopTrendingStreaming.connect('twittertrending')
+clusterTopTrending= Cluster(['52.207.228.147'])
+sessionTopTrending= clusterTopTrendingStreaming.connect('twitter_trending')
 
-clusterStockData = Cluster(['54.67.105.220'])
-sessionStockData = clusterStockData.connect('stockdata')
+clusterStockData = Cluster(['52.207.228.147'])
+sessionStockData = clusterStockData.connect('stock_data')
 
-clusterTweets = Cluster(['54.67.105.220'])
-sessionTweets = clusterTweets.connect('latesttweets')
+# clusterTweets = Cluster(['52.207.228.147'])
+# sessionTweets = clusterTweets.connect('latest_tweets')
+
 
 
 @app.route('/')
@@ -45,13 +45,14 @@ def welcome():
 
 @app.route('/live_streaming')
 def live_streaming():
-    data =[]
-    rows = sessionTopTrendingStreaming.execute("select * from toptrending30min where id in (0,1,2,3,4) order by timestamp desc limit 5");
-    
+    sessionTopTrendingStreaming.default_fetch_size = 2147483647
+    rows = sessionTopTrendingStreaming.execute("select * from toptrending30min where id in (0,1,2,3,4) order by timestamp DESC limit 5")
 
+   
     freq = []
     ticker = []
     color1 = []
+    data = []
 
     for r in rows:
         if r.sentiment > 0:
@@ -73,27 +74,30 @@ def live_streaming():
         temp = [ticker[i], freq[i], color1[i], ticker[i]]
         data2.append(temp)
 
-    print data2
-    text=[]
-    rowsTweets = sessionTweets.execute("select * from recenttweets limit 10");
-    for r1 in rowsTweets:
-        #print r1.tweet
-        text.append(r1.tweet)
-    #print rows.text
-    author = [r.user for r in rowsTweets]
-    dateTime = [str(r.year)+'-'+str(r.month)+'-'+str(r.day)+' '+str(r.hour)+':'+str(r.minute)+':'+str(r.second) for r in rowsTweets]
-    return jsonify(data=data2,text=text, author=author, dateTime=dateTime)   
+    #print data2
+    # text=[]
+    # rowsTweets = sessionTweets.execute("select * from recenttweets limit 10");
+    # for r1 in rowsTweets:
+    #     #print r1.tweet
+    #     text.append(r1.tweet)
+    # #print rows.text
+    # author = [r.user for r in rowsTweets]
+    # dateTime = [str(r.year)+'-'+str(r.month)+'-'+str(r.day)+' '+str(r.hour)+':'+str(r.minute)+':'+str(r.second) for r in rowsTweets]
+    # return jsonify(data=data2,text=text, author=author, dateTime=dateTime)  
+    return jsonify(data=data2)   
+ 
+    # return "Goodbye"
 
 
-@app.route('/live_streaming_tweets')
-def live_streaming_tweets():
-    text=[]
-    rowsTweets = sessionTweets.execute("select * from recenttweets limit 10");
-    for r1 in rowsTweets:
-        #print r1.tweet
-        text.append(r1.tweet)
+# @app.route('/live_streaming_tweets')
+# def live_streaming_tweets():
+#     text=[]
+#     rowsTweets = sessionTweets.execute("select * from recenttweets limit 10");
+#     for r1 in rowsTweets:
+#         #print r1.tweet
+#         text.append(r1.tweet)
 
-    return jsonify(data=text)   
+#     return jsonify(data=text)   
 
 @app.route('/top_trending_hour/<datetime1>')
 def top_trending_hour(datetime1):    
@@ -126,6 +130,8 @@ def top_trending_hour(datetime1):
 @app.route('/get_count_chart/<stockName>')
 def get_count_chart(stockName):
     rowTime = sessionTwitterSeries.execute("select * from trendingminute where ticker= '" + stockName + "' ")
+    print('----1')
+    print(rowTime)
     data1 = []
     data2  = []
     for r in rowTime:    

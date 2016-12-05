@@ -10,8 +10,8 @@ CREATE TABLE toptrending30min
  timestamp bigint ,
  frequency int,
  sentiment int,
- PRIMARY KEY((timestamp),id)
- ) WITH CLUSTERING ORDER BY (id ASC);
+ PRIMARY KEY((id),timestamp)
+ ) WITH CLUSTERING ORDER BY (timestamp DESC);
 
 CREATE TABLE topTrendingHour (
    year int,
@@ -66,3 +66,20 @@ CREATE TABLE topTrendingYear (
    sentiment int,
    PRIMARY KEY ((year), frequency)
 ) WITH CLUSTERING ORDER BY (frequency DESC);
+
+/*
+CREATE TABLE toptrending30minBkp
+(
+ ticker text,
+ id int,
+ timestamp bigint ,
+ frequency int,
+ sentiment int,
+ PRIMARY KEY((timestamp),id)
+ ) WITH CLUSTERING ORDER BY (id ASC);
+
+COPY twitter_trending_streaming.toptrending30min (ticker, id, timestamp, frequency, sentiment) TO 'temp.csv'; 
+
+
+COPY twitter_trending_streaming.toptrending30min(ticker, id, timestamp, frequency, sentiment) FROM 'temp.csv';
+*/
