@@ -62,7 +62,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterTimeSeries.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TwitterTimeSeries.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TwitterTimeSeries.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-3336">
@@ -75,7 +75,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TwitterTopTrending.scala" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TwitterTopTrending.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/TwitterTopTrending.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="189">
@@ -872,17 +872,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/TwitterTopTrending.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="188" column="52" selection-start-line="188" selection-start-column="36" selection-end-line="188" selection-end-column="52" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#40#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/TestDateString.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -901,6 +890,17 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#41#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/TwitterTopTrending.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="188" column="52" selection-start-line="188" selection-start-column="36" selection-end-line="188" selection-end-column="52" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#40#76#0" expanded="true" />
           </folding>
         </state>
       </provider>

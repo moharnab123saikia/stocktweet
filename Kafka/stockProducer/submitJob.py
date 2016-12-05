@@ -21,17 +21,17 @@ def submitJob(stock):
 
 
 def doWork():
-    stocks = cashtagSet('NASDAQ100')
-    for stock in stocks.split(','):
-        submitJob(stock[1:])
+    # stocks = cashtagSet('NASDAQ100')
+    # for stock in stocks.split(','):
+    #     submitJob(stock[1:])
 
-    stocks = cashtagSet('NYSE100')
-    for stock in stocks.split(','):
-        submitJob(stock[1:])
-    #
-    stocks = cashtagSet('COMPANIES')
-    for stock in stocks.split(','):
-        submitJob(stock[1:])
+    # stocks = cashtagSet('NYSE100')
+    # for stock in stocks.split(','):
+    #     submitJob(stock[1:])
+    # #
+    # stocks = cashtagSet('COMPANIES')
+    # for stock in stocks.split(','):
+    #     submitJob(stock[1:])
 
     stocks = cashtagSet('SP')
     for stock in stocks.split(','):
