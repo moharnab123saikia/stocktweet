@@ -1,98 +1,4 @@
 Symbol,Name,Sector
-MMM,3M Company,Industrials
-ABT,Abbott Laboratories,Health Care
-ABBV,AbbVie,Health Care
-ACN,Accenture plc,Information Technology
-ATVI,Activision Blizzard,Information Technology
-AYI,Acuity Brands Inc,Industrials
-ADBE,Adobe Systems Inc,Information Technology
-AAP,Advance Auto Parts,Consumer Discretionary
-AES,AES Corp,Utilities
-AET,Aetna Inc,Health Care
-AMG,Affiliated Managers Group Inc,Financials
-AFL,AFLAC Inc,Financials
-A,Agilent Technologies Inc,Health Care
-APD,Air Products & Chemicals Inc,Materials
-AKAM,Akamai Technologies Inc,Information Technology
-ALK,Alaska Air Group Inc,Industrials
-ALB,Albemarle Corp,Materials
-AA,Alcoa Inc,Materials
-ALXN,Alexion Pharmaceuticals,Health Care
-ALLE,Allegion,Industrials
-AGN,Allergan plc,Health Care
-ADS,Alliance Data Systems,Information Technology
-LNT,Alliant Energy Corp,Utilities
-ALL,Allstate Corp,Financials
-GOOGL,Alphabet Inc Class A,Information Technology
-GOOG,Alphabet Inc Class C,Information Technology
-MO,Altria Group Inc,Consumer Staples
-AMZN,Amazon.com Inc,Consumer Discretionary
-AEE,Ameren Corp,Utilities
-AAL,American Airlines Group,Industrials
-AEP,American Electric Power,Utilities
-AXP,American Express Co,Financials
-AIG,"American International Group, Inc.",Financials
-AMT,American Tower Corp A,Financials
-AWK,American Water Works Company Inc,Utilities
-AMP,Ameriprise Financial,Financials
-ABC,AmerisourceBergen Corp,Health Care
-AME,Ametek,Industrials
-AMGN,Amgen Inc,Health Care
-APH,Amphenol Corp A,Industrials
-APC,Anadarko Petroleum Corp,Energy
-ADI,"Analog Devices, Inc.",Information Technology
-ANTM,Anthem Inc.,Health Care
-AON,Aon plc,Financials
-APA,Apache Corporation,Energy
-AIV,Apartment Investment & Mgmt,Financials
-AAPL,Apple Inc.,Information Technology
-AMAT,Applied Materials Inc,Information Technology
-ADM,Archer-Daniels-Midland Co,Consumer Staples
-AJG,Arthur J. Gallagher & Co.,Financials
-AIZ,Assurant Inc,Financials
-T,AT&T Inc,Telecommunications Services
-ADSK,Autodesk Inc,Information Technology
-ADP,Automatic Data Processing,Information Technology
-AN,AutoNation Inc,Consumer Discretionary
-AZO,AutoZone Inc,Consumer Discretionary
-AVGO,Avago Technologies,Information Technology
-AVB,"AvalonBay Communities, Inc.",Financials
-AVY,Avery Dennison Corp,Materials
-BHI,Baker Hughes Inc,Energy
-BLL,Ball Corp,Materials
-BAC,Bank of America Corp,Financials
-BCR,Bard (C.R.) Inc.,Health Care
-BAX,Baxter International Inc.,Health Care
-BBT,BB&T Corporation,Financials
-BDX,Becton Dickinson,Health Care
-BBBY,Bed Bath & Beyond,Consumer Discretionary
-BRK-B,Berkshire Hathaway,Financials
-BBY,Best Buy Co. Inc.,Consumer Discretionary
-BIIB,BIOGEN IDEC Inc.,Health Care
-BLK,BlackRock,Financials
-HRB,Block H&R,Financials
-BA,Boeing Company,Industrials
-BWA,BorgWarner,Consumer Discretionary
-BXP,Boston Properties,Financials
-BSX,Boston Scientific,Health Care
-BMY,Bristol-Myers Squibb,Health Care
-BF-B,Brown-Forman Corporation,Consumer Staples
-CHRW,C. H. Robinson Worldwide,Industrials
-CA,"CA, Inc.",Information Technology
-COG,Cabot Oil & Gas,Energy
-CPB,Campbell Soup,Consumer Staples
-COF,Capital One Financial,Financials
-CAH,Cardinal Health Inc.,Health Care
-KMX,Carmax Inc,Consumer Discretionary
-CCL,Carnival Corp.,Consumer Discretionary
-CAT,Caterpillar Inc.,Industrials
-CBG,CBRE Group,Financials
-CBS,CBS Corp.,Consumer Discretionary
-CELG,Celgene Corp.,Health Care
-CNC,Centene Corporation,Health Care
-CNP,CenterPoint Energy,Utilities
-CTL,CenturyLink Inc,Telecommunications Services
-CERN,Cerner,Health Care
 CF,CF Industries Holdings Inc,Materials
 SCHW,Charles Schwab Corporation,Financials
 CHK,Chesapeake Energy,Energy
@@ -104,11 +10,11 @@ CI,CIGNA Corp.,Health Care
 XEC,Cimarex Energy,Energy
 CINF,Cincinnati Financial,Financials
 CTAS,Cintas Corporation,Industrials
-CSCO,Cisco Systems,Information Technology
-C,Citigroup Inc.,Financials
+CSCO,Cisco Systems,Information Technolog
+C,Citigroup Inc.,Financial
 CFG,Citizens Financial Group,Financials
 CTXS,Citrix Systems,Information Technology
-CME,CME Group Inc.,Financials
+CME,CME Group Inc.,Financial
 CMS,CMS Energy,Utilities
 COH,Coach Inc.,Consumer Discretionary
 CTSH,Cognizant Technology Solutions,Information Technology
