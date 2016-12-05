@@ -1,0 +1,27 @@
+WARNING:kafka.conn:old ssl module detected. ssl error handling may not operate cleanly. Consider upgrading to python 3.5 or 2.7
+/usr/local/lib/python2.6/site-packages/kafka/__init__.py:42: DeprecationWarning: The legacy KafkaClient interface has been moved to kafka.SimpleClient - this import will break in a future release
+  ' future release', DeprecationWarning)
+/usr/local/lib/python2.6/site-packages/kafka/consumer/simple.py:124: DeprecationWarning: deprecated - this class will be removed in a future release. Use KafkaConsumer instead.
+  DeprecationWarning)
+/usr/local/lib/python2.6/site-packages/kafka/consumer/base.py:50: DeprecationWarning: deprecated -- this class will be removed in a future release. Use KafkaConsumer instead.
+  DeprecationWarning)
+/usr/local/lib/python2.6/site-packages/kafka/consumer/simple.py:45: DeprecationWarning: deprecated - this class will be removed in a future release
+  ' release', DeprecationWarning)
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 02:26:46,941 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 02:26:48,352 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 03:28:59,188 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 03:29:00,672 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 04:31:16,633 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+OpenJDK 64-Bit Server VM warning: You have loaded library /root/ephemeral-hdfs/lib/native/libhadoop.so.1.0.0 which might have disabled stack guard. The VM will try to fix the stack guard now.
+It's highly recommended that you fix the library with 'execstack -c <libfile>', or link it with '-z noexecstack'.
+2016-12-05 04:31:18,114 WARN  [main] util.NativeCodeLoader (NativeCodeLoader.java:<clinit>(62)) - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
