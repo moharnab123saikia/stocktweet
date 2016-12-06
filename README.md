@@ -135,6 +135,9 @@ nohup python twitterAPI.py &
 * Submit Top Trending job from EC2
 ```
 nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TwitterTopTrending /home/ec2-user/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar &
+
+nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TwitterTopTrending /home/ec2-user/TestScala-assembly-1.0.jar "MIN" &
+
 ```
 
 * Remove files from S3
