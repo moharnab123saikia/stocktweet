@@ -1,11 +1,28 @@
 # stocktweet
 Data Intensive Computing CSC-591
+Implementing Big Data Pipeline using Lambda Architecture.
 
-Version numbers:
+### Objective:
+* Fetch Twitter data and Stock data and ingest data to pipeline.  
+* Establish batch layer to run jobs for ETL.
+* Set up Speed layer to support low latency real-time queries.
+* Back operations with Serving layer to store results of batch layer and also support Presentation Layer.
+* Presentation layer for interactive dashboards.
 
-1. Scala: 2.12.0 </br>
-2. Spark: 2.0.2  </br>
-3. Kafka:        </br>
+### Requirements:
+
+* Scala: 2.12.0 
+* Spark: 2.0.2  
+* Kafka:       
+* Amazon EC2
+* Amazon S3
+* HDFS
+
+### Data Source:
+* Twitter data from Streaming API limited to 700 stocks.
+* Stocks Data from Google Finance
+
+### Steps To Run:
 
 Update the field - native_transport_port: <port-number> Cassandra.yaml file
 
@@ -13,7 +30,7 @@ Update the field - native_transport_port: <port-number> Cassandra.yaml file
 ```
 ./spark-ec2 --key-pair=awskey -s 5 --instance-type=m4.xlarge --spark-version="2.0.2" --ebs-vol-size=80 --identity-file=awskey.pem --region=us-east-1 --zone=us-east-1b launch test_spark_cluster
 ```
-* coonect to master node with IP
+* Conect to master node with IP
 ```
 ssh -i awskey.pem ec2-user@52.207.228.147
 
@@ -29,10 +46,11 @@ sbt assembly
 scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
 
 #TestScala-assembly-1.0.jar
+```
 scp -i awskey.pem /home/sud/Desktop/DIC/new/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
 
 ```
-* connect to EC2
+* Connect to EC2
 ````
 ssh -i awskey.pem ec2-user@ec2-54-147-248-95.compute-1.amazonaws.com
 ```
@@ -40,11 +58,12 @@ ssh -i awskey.pem ec2-user@ec2-54-147-248-95.compute-1.amazonaws.com
 * Submit app:
 ```
 /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TestKafkaConsumer /home/ec2-user/testscala_2.11-1.0.jar
-
-# after assembly
+```
+* After assembly
+```
 nohup /root/spark/bin/spark-submit --packages datastax:spark-cassandra-connector:2.0.0-M2-s_2.11 --class TestKafkaConsumer /home/ec2-user/TestScala-assembly-1.0.jar &
 ```
-* copy rsa.pub to all slaves - not necessary
+* Copy rsa.pub to all slaves - not necessary
 ```
 scp -i awskey.pem id_rsa.pub ec2-user@52.90.0.145:/home/ec2-user/
 cat id_rsa.pub > ~/.ssh/authorized_keys
@@ -61,7 +80,7 @@ ssh -i awskey.pem ec2-user@54.163.206.25
 scp -i awskey.pem id_rsa.pub ec2-user@54.197.3.38:/home/ec2-user/
 ssh -i awskey.pem ec2-user@54.197.3.38
 ```
-* stop cluster
+* Stop cluster
 ```
 ./spark-ec2 stop test-spark-cluster
 ```
