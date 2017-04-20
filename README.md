@@ -22,6 +22,12 @@ Implementing Big Data Pipeline using Lambda Architecture.
 * Twitter data from Streaming API limited to 700 stocks.
 * Stocks Data from Google Finance
 
+### Architecture Diagram:
+![alt tag](https://github.com/moharnab123saikia/stocktweet/blob/master/images/Quince.pptx(1).png)
+![alt tag](https://github.com/moharnab123saikia/stocktweet/blob/master/images/Quince.pptx.png)
+![alt tag](https://github.com/moharnab123saikia/stocktweet/blob/master/images/Quince.pptx(2).png)
+![alt tag](https://github.com/moharnab123saikia/stocktweet/blob/master/images/Quince.pptx(3).png)
+
 ### Steps To Run:
 
 Update the field - native_transport_port: <port-number> Cassandra.yaml file
@@ -44,14 +50,14 @@ sbt assembly
 * Transfer files to master node
 ```
 scp -i awskey.pem /home/sud/Desktop/DIC/stocktweet/SparkStreaming/TestScala/target/scala-2.11/testscala_2.11-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
-
-#TestScala-assembly-1.0.jar
+```
+* TestScala-assembly-1.0.jar
 ```
 scp -i awskey.pem /home/sud/Desktop/DIC/new/stocktweet/SparkStreaming/TestScala/target/scala-2.11/TestScala-assembly-1.0.jar ec2-user@52.207.228.147:/home/ec2-user/
 
 ```
 * Connect to EC2
-````
+```
 ssh -i awskey.pem ec2-user@ec2-54-147-248-95.compute-1.amazonaws.com
 ```
 
